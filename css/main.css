@@ -199,14 +199,14 @@
   right: 0;
   bottom: 0;
   border: 5px solid transparent;
-  background: repeating-linear-gradient(45deg, rgba(var(--third-cta), 0.7), rgba(var(--secondary-cta), 1)) border-box;
+  background: linear-gradient(45deg, rgba(var(--third-cta), 0.7), rgba(var(--secondary-cta), 1)) border-box;
   -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
 }
 .container-btn.custom-btn > .btn-gl.btn-14:hover::before {
-  background-position: -106.25em 0;
-  transition: 5s linear;
+  background-position: 30em 0em;
+  transition: 1s linear;
 }
 
 .btn-rounded::before {
@@ -244,4 +244,5 @@
   filter: 0;
   width: 100% !important;
   height: 100%;
+  padding: 20px !important;
 }
