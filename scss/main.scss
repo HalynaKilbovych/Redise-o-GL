@@ -193,9 +193,6 @@
     
      
 }
-
-
-
 // btn
 
 .container-btn {
@@ -250,43 +247,56 @@
 			}
 
             &.btn-14 {
-                position: relative;
+                overflow: hidden;
+                background-color: transparent;
             }
             
             &.btn-14 a {
+                border: 5px solid;
                 color: rgba(var(--textCTA), 1) !important;
-                padding: 1.5rem 4rem;
+                border-image: linear-gradient(45deg,  rgb(var(--third-cta)),  rgb(var(--secondary-cta))) 1;
+                transition: all 300ms ease-in;
             }
             
-            &.btn-14::before {
+            &.btn-14:hover a {
+                border: 5px solid;
+                border-image: linear-gradient(-45deg,  rgb(var(--third-cta)), rgb(var(--third-cta)), rgb(var(--secondary-cta))) 1;
+            }
+
+
+
+            &.btn-14-1 {
+                position: relative;
+            }
+
+            &.btn-14-1 a {
+                color: rgba(var(--textCTA), 1) !important;
+            }
+
+            &.btn-14-1::before {
                 content: "";
                 position: absolute;
                 top: 0;
                 left: 0;
                 right: 0;
                 bottom: 0;
-                border: 5px solid;
-                border-image: linear-gradient(45deg, rgb(var(--third-cta)), rgb(var(--secondary-cta))) 1;
-                transition: border-image 350ms ease-in-out;
+                border: 5px solid transparent;
+                background:  linear-gradient(
+                    45deg, rgba(var(--third-cta), 0.7), rgba(var(--secondary-cta), 1)) border-box;
+                -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+                -webkit-mask-composite: destination-out;
+                mask-composite: exclude;
               }
-              
-            
-            &.btn-14:hover::before {
-                border-image: linear-gradient(-45deg, rgb(var(--third-cta)), rgb(var(--third-cta)), rgb(var(--secondary-cta))) 1;
+
+
+            &.btn-14-1:hover::before {
+                background-position: 484px 0em;
+                transition: 1s linear;
             }
-
         }
-
      }
 
 }
-
-
-.btn-rounded::before { 
-    border-radius: 50px;
-}
-
-
 // img
 .img-1{
     border-radius: 20px;
