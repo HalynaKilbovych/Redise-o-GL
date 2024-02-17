@@ -46,10 +46,7 @@
     & .funnel-title span{ 
         font-size: 32px;
     }
-    
-    & .container-btn .btn-gl>a { 
-        padding: 1rem 2rem;
-    }
+
     
     @media only screen and (min-width: 768px) { 
         &  {
@@ -255,11 +252,12 @@
             &.btn-14 {
                 position: relative;
             }
-
+            
             &.btn-14 a {
                 color: rgba(var(--textCTA), 1) !important;
+                padding: 1.5rem 4rem;
             }
-
+            
             &.btn-14::before {
                 content: "";
                 position: absolute;
@@ -267,18 +265,14 @@
                 left: 0;
                 right: 0;
                 bottom: 0;
-                border: 5px solid transparent;
-                background:  linear-gradient(
-                    45deg, rgba(var(--third-cta), 0.7), rgba(var(--secondary-cta), 1)) border-box;
-                -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-                -webkit-mask-composite: destination-out;
-                mask-composite: exclude;
+                border: 5px solid;
+                border-image: linear-gradient(45deg, rgb(var(--third-cta)), rgb(var(--secondary-cta))) 1;
+                transition: border-image 350ms ease-in-out;
               }
               
-
+            
             &.btn-14:hover::before {
-                background-position: 30em 0em;
-                transition: 1s linear;
+                border-image: linear-gradient(-45deg, rgb(var(--third-cta)), rgb(var(--third-cta)), rgb(var(--secondary-cta))) 1;
             }
 
         }

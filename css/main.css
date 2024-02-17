@@ -32,9 +32,6 @@
 .funnel-hero.funnel-eight .funnel-title span {
   font-size: 32px;
 }
-.funnel-hero.funnel-eight .container-btn .btn-gl > a {
-  padding: 1rem 2rem;
-}
 @media only screen and (min-width: 768px) {
   .funnel-hero.funnel-eight {
     padding: 10rem 0 10rem;
@@ -190,6 +187,7 @@
 }
 .container-btn.custom-btn > .btn-gl.btn-14 a {
   color: rgba(var(--textCTA), 1) !important;
+  padding: 1.5rem 4rem;
 }
 .container-btn.custom-btn > .btn-gl.btn-14::before {
   content: "";
@@ -198,15 +196,15 @@
   left: 0;
   right: 0;
   bottom: 0;
-  border: 5px solid transparent;
-  background: linear-gradient(45deg, rgba(var(--third-cta), 0.7), rgba(var(--secondary-cta), 1)) border-box;
-  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: destination-out;
-  mask-composite: exclude;
+  border: 5px solid;
+  -o-border-image: linear-gradient(45deg, rgb(var(--third-cta)), rgb(var(--secondary-cta))) 1;
+     border-image: linear-gradient(45deg, rgb(var(--third-cta)), rgb(var(--secondary-cta))) 1;
+  transition: border-image 350ms ease-in-out;
+  transition: border-image 350ms ease-in-out, -o-border-image 350ms ease-in-out;
 }
 .container-btn.custom-btn > .btn-gl.btn-14:hover::before {
-  background-position: 30em 0em;
-  transition: 1s linear;
+  -o-border-image: linear-gradient(-45deg, rgb(var(--third-cta)), rgb(var(--third-cta)), rgb(var(--secondary-cta))) 1;
+     border-image: linear-gradient(-45deg, rgb(var(--third-cta)), rgb(var(--third-cta)), rgb(var(--secondary-cta))) 1;
 }
 
 .btn-rounded::before {
