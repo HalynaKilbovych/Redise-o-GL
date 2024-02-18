@@ -8,6 +8,8 @@
     radial-gradient(circle, rgba(24,8,15,0.6) 0%, rgba(0,0,0,0.8) 100%), 
     url(https://source.unsplash.com/woman-standing-surrounded-by-exercise-equipment-CQfNt66ttZM.jpg)!important;
     background-position:center,center,center;
+    padding-left: 10px;
+    padding-right: 10px;
 
     & .funnel-title span { 
         -webkit-text-fill-color: var(--textCTA);
