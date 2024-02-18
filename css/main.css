@@ -222,12 +222,16 @@
   transition: 1s linear;
 }
 
+.btn-rounded::before {
+  border-radius: 50px;
+}
+
 .img-1 {
   border-radius: 20px;
   position: relative;
 }
 
-.img-1::after, .img-1::before {
+.img-1::after {
   position: absolute;
   width: 99%;
   height: 100%;
@@ -240,13 +244,6 @@
   border-radius: 20px;
   transform: rotate(4deg);
   box-shadow: rgba(var(--bs-indigo), 0.3) 0px 1px 0px, rgba(var(--bs-indigo), 0.3) 0px 8px 14px, rgba(var(--bs-orange), 0.3) 0px 12px 28px;
-}
-
-.img-1::before {
-  background: linear-gradient(180deg, #2dfca6 0%, #8124f8 100%);
-  z-index: -1;
-  top: -3px;
-  left: -7px;
 }
 
 .img-1 img {
