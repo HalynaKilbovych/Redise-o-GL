@@ -248,6 +248,8 @@
 
             &.btn-14 {
                 position: relative;
+                display: flex;
+                align-items: center;
             }
 
             &.btn-14 a {
@@ -271,7 +273,8 @@
 
 
             &.btn-14:hover::before {
-                background-position: 484px 0em;
+                background-size: 600px;
+                background-position: 600px 0;
                 transition: 1s linear;
             }
         }

@@ -184,6 +184,8 @@
 }
 .container-btn.custom-btn > .btn-gl.btn-14 {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 .container-btn.custom-btn > .btn-gl.btn-14 a {
   color: rgba(var(--textCTA), 1) !important;
@@ -202,7 +204,8 @@
   mask-composite: exclude;
 }
 .container-btn.custom-btn > .btn-gl.btn-14:hover::before {
-  background-position: 484px 0em;
+  background-size: 600px;
+  background-position: 600px 0;
   transition: 1s linear;
 }
 
