@@ -247,33 +247,14 @@
 			}
 
             &.btn-14 {
-                overflow: hidden;
-                background-color: transparent;
-            }
-            
-            &.btn-14 a {
-                border: 5px solid;
-                color: rgba(var(--textCTA), 1) !important;
-                border-image: linear-gradient(45deg,  rgb(var(--third-cta)),  rgb(var(--secondary-cta))) 1;
-                transition: all 300ms ease-in;
-            }
-            
-            &.btn-14:hover a {
-                border: 5px solid;
-                border-image: linear-gradient(-45deg,  rgb(var(--third-cta)), rgb(var(--third-cta)), rgb(var(--secondary-cta))) 1;
-            }
-
-
-
-            &.btn-14-1 {
                 position: relative;
             }
 
-            &.btn-14-1 a {
+            &.btn-14 a {
                 color: rgba(var(--textCTA), 1) !important;
             }
 
-            &.btn-14-1::before {
+            &.btn-14::before {
                 content: "";
                 position: absolute;
                 top: 0;
@@ -289,7 +270,7 @@
               }
 
 
-            &.btn-14-1:hover::before {
+            &.btn-14:hover::before {
                 background-position: 484px 0em;
                 transition: 1s linear;
             }
