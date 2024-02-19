@@ -243,6 +243,6 @@
   border-radius: 20px !important;
 }
 
-.img-1:hover::before {
+.img-1:hover::after {
   box-shadow: rgba(var(--colorCTA), 0.2) -15px 20px 25px;
 }
