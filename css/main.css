@@ -1,3 +1,68 @@
+.funnel-widget {
+  width: auto;
+  background-color: rgb(238, 238, 238);
+  border-radius: 1em;
+  padding: 1.5em 3em;
+  max-width: 50em;
+  min-width: 35em;
+  transition: box-shadow 0.4s linear;
+  box-shadow: rgba(83, 83, 83, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.funnel-widget .number-item p {
+  margin: 0;
+}
+.funnel-widget .checked {
+  color: orange;
+}
+.funnel-widget--left {
+  margin-left: 3em;
+}
+.funnel-widget--center {
+  margin: 0 auto;
+}
+.funnel-widget:hover {
+  box-shadow: rgba(31, 31, 31, 0.25) 0px 14px 35px, rgba(0, 0, 0, 0.22) 0px 10px 20px;
+}
+
+.funnel-widget.funnel-one .widget-images {
+  display: flex;
+}
+.funnel-widget.funnel-one .img-item {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -20px;
+  border: 5px solid white;
+  box-shadow: 5px 5px 15px #a5a5a5;
+  margin-bottom: 1rem;
+  transition: box-shadow 0.2s linear;
+}
+.funnel-widget.funnel-one .img-item:hover {
+  box-shadow: 5px 5px 18px #686868;
+}
+.funnel-widget.funnel-one .number-item {
+  background: rgb(91, 5, 161);
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 600;
+}
+.funnel-widget.funnel-one .widget-stars {
+  display: none;
+}
+.funnel-widget.funnel-one .funnel-sec-title {
+  display: none;
+}
+.funnel-widget.funnel-one .text-normal {
+  font-size: 20px;
+}
+.funnel-widget.funnel-one .text-normal strong {
+  font-weight: 600;
+}
+
 /* .funnel-hero.funnel-eight */
 .funnel-hero.funnel-eight {
   background: 0 0;
