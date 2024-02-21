@@ -1,10 +1,7 @@
 .funnel-widget {
   width: auto;
-  border-radius: 1em;
-  padding: 1.5em 2.5em;
   max-width: 40em;
   transition: box-shadow 0.4s linear;
-  box-shadow: rgba(83, 83, 83, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 .funnel-widget .number-item p {
   margin: 0;
@@ -13,29 +10,29 @@
   color: orange;
 }
 .funnel-widget--left {
-  margin-left: 3em;
+  margin-left: 1.5em;
 }
 .funnel-widget--right {
-  margin-right: 3em;
+  margin-right: 1.5em;
+}
+.funnel-widget--top {
+  margin-top: 1.5em;
+}
+.funnel-widget--bottom {
+  margin-bottom: 1.5em;
 }
 .funnel-widget--center {
   margin: 0 auto;
 }
-.funnel-widget--top {
-  margin-top: 3em;
-}
 .funnel-widget--hero {
   order: 5;
-}
-.funnel-widget:hover {
-  box-shadow: rgba(31, 31, 31, 0.25) 0px 14px 35px, rgba(0, 0, 0, 0.22) 0px 10px 20px;
 }
 
 .funnel-widget.funnel-one .widget-images {
   display: flex;
   margin-left: 15px;
 }
-.funnel-widget.funnel-one .img-item {
+.funnel-widget.funnel-one .widget-img-item {
   width: 70px;
   height: 70px;
   border-radius: 50px;
@@ -44,15 +41,15 @@
   align-items: center;
   justify-content: center;
   margin-left: -15px;
-  border: 4px solid #e6e6e6;
+  border: 4px solid rgba(255, 255, 255, 0.75);
   box-shadow: rgba(31, 31, 31, 0.25) 0px 14px 15px;
   margin-bottom: 1rem;
   transition: box-shadow 0.2s linear;
 }
-.funnel-widget.funnel-one .img-item:hover {
+.funnel-widget.funnel-one .widget-img-item:hover {
   box-shadow: rgba(31, 31, 31, 0.55) 0px 14px 25px;
 }
-.funnel-widget.funnel-one .img-item img {
+.funnel-widget.funnel-one .widget-img-item img {
   width: 85px;
 }
 .funnel-widget.funnel-one .number-item {
@@ -70,6 +67,11 @@
 }
 .funnel-widget.funnel-one .text-normal strong {
   font-weight: 600;
+}
+
+.star {
+  color: orange;
+  font-size: 30px;
 }
 
 /* .funnel-hero.funnel-eight */

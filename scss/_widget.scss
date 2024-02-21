@@ -2,12 +2,8 @@
 
 .funnel-widget { 
     width: auto;
-    border-radius: 1em;
-    padding: 1.5em 2.5em;
     max-width: 40em; 
     transition: box-shadow 0.4s linear;
-    box-shadow: rgba(83, 83, 83, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; 
-
     & .number-item p{ 
         margin: 0;
     }
@@ -17,33 +13,31 @@
       }
     
     &--left { 
-        margin-left: 3em;
+        margin-left: 1.5em;
     }
 
     &--right { 
-        margin-right: 3em;
+        margin-right: 1.5em;
+    }
+
+    &--top { 
+        margin-top: 1.5em;
+    }
+
+    &--bottom { 
+        margin-bottom: 1.5em;
     }
 
     &--center { 
         margin: 0 auto; 
     }
 
-    &--top { 
-        margin-top: 3em;
-    }
 
     &--hero { 
         order: 5;
     }
-
-    &:hover { 
-        box-shadow: rgba(31, 31, 31, 0.25) 0px 14px 35px, rgba(0, 0, 0, 0.22) 0px 10px 20px; 
-    }
     
 }
-
-
-
 
 .funnel-widget.funnel-one { 
     & .widget-images { 
@@ -51,7 +45,7 @@
         margin-left: 15px;
     }
 
-    & .img-item { 
+    & .widget-img-item{ 
         width: 70px;
         height: 70px;
         border-radius: 50px;
@@ -60,7 +54,7 @@
         align-items: center;
         justify-content: center;
         margin-left: -15px;
-        border: 4px solid  #e6e6e6;
+        border: 4px solid  rgba(255, 255, 255, 0.75); 
         box-shadow: rgba(31, 31, 31, 0.25) 0px 14px 15px;
         margin-bottom: 1rem;
         transition: box-shadow 0.2s linear;
@@ -69,7 +63,7 @@
         }
     } 
 
-    & .img-item img { 
+    & .widget-img-item img { 
         width: 85px;
     }
 
@@ -98,3 +92,7 @@
 }
 
 
+.star { 
+    color: orange;
+    font-size: 30px;
+}
