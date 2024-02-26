@@ -51,6 +51,10 @@
     
 }
 
+.number-item { 
+    font-weight: 600;
+}
+
 .funnel-widget.funnel-one { 
     & .widget-images { 
         display: flex;
@@ -67,7 +71,7 @@
         align-items: center;
         justify-content: center;
         margin-left: -15px;
-        border: 2px solid  rgba(255, 255, 255, 0.75); 
+        border: 2px solid  rgba(255, 255, 255, 1); 
         box-shadow: rgba(31, 31, 31, 0.25) 0px 14px 15px;
         transition: box-shadow 0.2s linear;
         &:hover { 
@@ -147,7 +151,7 @@
         align-items: center;
         justify-content: center;
         margin-left: -15px;
-        border: 4px solid  rgba(255, 255, 255, 0.75); 
+        border: 2px solid  rgba(255, 255, 255, 1); 
         box-shadow: rgba(31, 31, 31, 0.25) 0px 14px 15px;
         transition: box-shadow 0.2s linear;
         &:hover { 
@@ -422,4 +426,94 @@
     & .widget-content-title { 
         display: block;
     }
+}
+
+.funnel-widget.funnel-seven { 
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    & .widget-images { 
+        display: flex;
+        margin-left: 15px;
+    } 
+
+    & .widget-img-item:nth-child(1) { 
+        display: none;
+    }
+
+
+
+    & .widget-img-item{ 
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -15px;
+        border: 2px solid  rgba(255, 255, 255, 1); 
+        box-shadow: rgba(31, 31, 31, 0.25) 0px 14px 15px;
+        transition: box-shadow 0.2s linear;
+        &:hover { 
+            box-shadow: rgba(31, 31, 31, 0.55) 0px 14px 25px;
+        }
+    } 
+
+    & .widget-img-item img { 
+        width: 75px;
+    }
+
+    & .widget-content { 
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 0px;
+        margin-left: 5px;
+        margin-bottom: 2px;
+        margin-top: 15px;
+    }
+
+    & .widget-content-title { 
+        display: none;
+    }
+
+    & .widget-text-content { 
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        align-self: baseline;
+    }
+
+
+    & .widget-content-title { 
+        font-weight: 600!important;
+        font-size: 1.25rem;
+    }
+
+
+    & .text-normal { 
+        margin-left: auto; 
+        line-height: 0;
+        font-size: 1rem;
+    }
+
+    & .text-normal p{ 
+        margin: 0;
+    }
+
+    & .text-normal p:nth-child(2){ 
+        display: none;
+    }
+
+    @media screen and (min-width: 350px) and (max-width: 425px) {
+        & .widget-img-item:nth-child(2) { 
+            display: none;
+        }
+    }
+
 }
