@@ -469,13 +469,10 @@
 
     & .widget-content { 
         display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
-        gap: 0px;
+        flex-direction: column-reverse;
+        gap: 5px;
         margin-left: 5px;
-        margin-bottom: 2px;
-        margin-top: 15px;
+        margin-bottom: 20px;
     }
 
     & .widget-content-title { 
