@@ -435,11 +435,6 @@
 .funnel-widget.funnel-seven .text-normal p:nth-child(2) {
   display: none;
 }
-@media screen and (min-width: 350px) and (max-width: 425px) {
-  .funnel-widget.funnel-seven .widget-img-item:nth-child(2) {
-    display: none;
-  }
-}
 
 /* .funnel-hero.funnel-eight */
 .funnel-hero.funnel-eight {

@@ -521,10 +521,4 @@
         display: none;
     }
 
-    @media screen and (min-width: 350px) and (max-width: 425px) {
-        & .widget-img-item:nth-child(2) { 
-            display: none;
-        }
-    }
-
 }
