@@ -103,13 +103,13 @@ $size:1.5px;
         filter: none!important;
         width: 100%!important;
         height: 100%;
-        border-radius: 30px!important;
+        border-radius: 20px!important;
     }
 
     &::after {
         content: "";
         position: absolute;
-        top: -12%;
+        top: -7%;
         left: -10%;
         width: 110%;
         height: 110%;
@@ -133,7 +133,7 @@ $size:1.5px;
         border-right: $size dotted rgba(var(--colorCTA));
         border-bottom: $size * 2 dotted rgba(var(--colorCTA));
         border-left: $size * 10 dotted rgba(var(--colorCTA));
-        filter: blur(15px);
+        filter: blur(5px);
         transform: scale(1) rotateZ(0deg);
       }
       25% {
@@ -142,7 +142,7 @@ $size:1.5px;
         border-bottom-left-radius: 45%;
         border-bottom-right-radius: 48%;
         transform: scale(0.95);
-        filter: blur(16px);
+        filter: blur(6px);
       }
       50% {
         border-top: $size dotted rgba(var(--colorCTA));
@@ -153,14 +153,14 @@ $size:1.5px;
         border-top-right-radius: 48%;
         border-bottom-left-radius: 48%;
         border-bottom-right-radius: 45%;
-        filter: blur(17px);
+        filter: blur(7px);
       }
       100% {
         border-top: $size * 2 dotted rgba(var(--colorCTA));
         border-right: $size dotted rgba(var(--colorCTA));
         border-bottom: $size * 2 dotted rgba(var(--colorCTA));
         border-left: $size * 10 dotted rgba(var(--colorCTA));
-        filter: blur(15px);
+        filter: blur(5px);
         transform: rotateZ(360deg);
       }
     }
