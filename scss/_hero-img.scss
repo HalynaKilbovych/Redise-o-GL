@@ -62,7 +62,7 @@
     background: linear-gradient(217deg, #16446c, rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, #006867, rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, #62265d, rgba(0, 0, 255, 0) 70.71%);
     border-radius: 50%;
     filter: blur(20px);
-
+    z-index: -2;
     top: -13%;
     left: -15%;
     border-radius: 400px;
