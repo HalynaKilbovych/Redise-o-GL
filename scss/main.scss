@@ -1,4 +1,5 @@
 @import '_widget.scss'; 
+@import '_hero-img.scss'; 
 
 /* .funnel-hero.funnel-eight */
 
@@ -89,7 +90,7 @@
 
 /* .funnel-hero.funnel-nine */
 
-.funnel-hero.funnel-nine { 
+.funnel-hero.funnel-nine, .funnel-hero.funnel-ten { 
     padding-left: 10px;
     padding-right: 10px;
     background: #180a1a!important;
@@ -285,36 +286,35 @@
     border-radius: 50px;
 } 
 
-// img
-.img-1{
-    border-radius: 20px;
-    position: relative;
-}
-
-.img-1::after{
-    position: absolute;
-    width: 99%;
-    height: 100%;
-    display: block;
-    content: '';
-    background: linear-gradient(180deg, var(--bs-indigo) 0%, var(--bs-orange) 100%);
-    z-index: -2;
-    top: -1%;
-    left: -1%;
-    border-radius: 20px;
-    transform: rotate(4deg);
-    box-shadow:rgba(var(--colorCTA), 0.2) -10px 15px 20px;
-    transition: all 0.3ms linear;
-}
 
 
-.img-1 img {
-    filter: 0;
-    width: 100%!important;
-    height: 100%;
-    border-radius: 20px!important;
-}
-
-.img-1:hover::after{
-    box-shadow:rgba(var(--colorCTA), 0.2) -15px 20px 25px;
+/* .funnel-hero.funnel-ten */
+.funnel-hero.funnel-ten { 
+    @media only screen and (min-width: 1200px) { 
+    
+        & .wrap-flex {
+            flex-wrap: nowrap;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            gap: 7%;
+        }
+    
+        & .wrap-flex .info-layer { 
+    
+            align-items: flex-start;
+            width: 53%;
+        }
+    
+        & .wrap-flex .image-layer{
+            width: 40%;
+        }
+    
+        & .funnel-title span{ 
+            font-size: 42px;
+        }
+        
+        & .wrap-flex .funnel-sec-title { 
+            line-height: 1.4;
+        }
+    }
 }
