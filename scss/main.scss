@@ -290,7 +290,11 @@
 
 /* .funnel-hero.funnel-ten */
 .funnel-hero.funnel-ten { 
-    @media only screen and (min-width: 1200px) { 
+    & .funnel-title span{ 
+        font-size: 32px;
+    }
+
+    @media only screen and (min-width: 768px) { 
     
         & .wrap-flex {
             flex-wrap: nowrap;
