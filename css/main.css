@@ -469,6 +469,19 @@
 
 .img-2 {
   position: relative;
+  width: 320px !important;
+  height: 320px;
+}
+@media only screen and (min-width: 768px) {
+  .img-2 {
+    width: 350px !important;
+    height: 350px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .img-2 {
+    width: 400px !important;
+  }
 }
 
 .img-2::after {
@@ -589,7 +602,20 @@ svg {
   }
 }
 .img-4 {
+  width: 320px !important;
+  height: 320px;
   position: relative;
+}
+@media only screen and (min-width: 768px) {
+  .img-4 {
+    width: 350px !important;
+    height: 350px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .img-4 {
+    width: 400px !important;
+  }
 }
 .img-4 img {
   position: relative;
@@ -602,16 +628,15 @@ svg {
 }
 .img-4:after {
   position: absolute;
-  left: -10%;
+  left: -15%;
   top: -30%;
   z-index: -1;
   display: block;
   content: "";
-  width: 120%;
-  height: 100%;
-  background: url(https://svgshare.com/i/14Rw.svg);
+  width: 130%;
+  height: 120%;
+  background: url(https://svgshare.com/i/14W4.svg);
   background-size: cover;
-  filter: blur(26px);
 }
 
 /* .funnel-hero.funnel-eight */
