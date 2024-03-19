@@ -642,7 +642,7 @@ svg {
 }
 .img-4:after {
   position: absolute;
-  left: -20%;
+  left: -30%;
   top: -30%;
   z-index: -1;
   display: block;
