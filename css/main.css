@@ -574,7 +574,7 @@ svg {
 
 .animate-img {
   height: 400px;
-  width: 110%;
+  width: 100%;
   background: url("https://azure.glmedialibrary.com/glstorage/library/6/img63842996654108985543.png");
   background-size: auto;
   background-position: center;
