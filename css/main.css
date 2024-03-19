@@ -576,12 +576,17 @@ svg {
   height: 400px;
   width: 100%;
   background: url("https://azure.glmedialibrary.com/glstorage/library/6/img63842996654108985543.png");
-  background-size: auto;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   animation: liquid 7s ease-in-out infinite;
   border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+}
+@media only screen and (min-width: 1200px) {
+  .animate-img {
+    height: 600px;
+  }
 }
 .animate-img img {
   display: none;
