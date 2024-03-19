@@ -480,7 +480,9 @@
 }
 @media only screen and (min-width: 1200px) {
   .img-2 {
-    width: 400px !important;
+    width: 550px !important;
+    height: 550px;
+    margin: 0 auto;
   }
 }
 
@@ -515,8 +517,9 @@
 }
 @media only screen and (min-width: 1200px) {
   .img-3 {
-    width: 450px !important;
-    height: 450px;
+    width: 520px !important;
+    height: 520px;
+    margin: 0 auto;
   }
 }
 
@@ -623,7 +626,9 @@ svg {
 }
 @media only screen and (min-width: 1200px) {
   .img-4 {
-    width: 400px !important;
+    width: 500px !important;
+    height: 500px;
+    margin: 0 auto;
   }
 }
 .img-4 img {
@@ -637,12 +642,12 @@ svg {
 }
 .img-4:after {
   position: absolute;
-  left: -15%;
+  left: -30%;
   top: -30%;
   z-index: -1;
   display: block;
   content: "";
-  width: 130%;
+  width: 150%;
   height: 120%;
   background: url(https://svgshare.com/i/14W4.svg);
   background-size: cover;
