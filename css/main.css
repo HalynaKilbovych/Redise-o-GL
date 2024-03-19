@@ -878,10 +878,10 @@ svg {
   }
   .funnel-hero.funnel-ten .wrap-flex .info-layer {
     align-items: flex-start;
-    width: 53%;
+    width: 40%;
   }
   .funnel-hero.funnel-ten .wrap-flex .image-layer {
-    width: 40%;
+    width: 53%;
   }
   .funnel-hero.funnel-ten .funnel-title span {
     font-size: 42px;
