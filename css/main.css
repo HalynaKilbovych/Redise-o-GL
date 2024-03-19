@@ -471,6 +471,7 @@
   position: relative;
   width: 320px !important;
   height: 320px;
+  margin: 0 auto;
 }
 @media only screen and (min-width: 768px) {
   .img-2 {
@@ -482,7 +483,6 @@
   .img-2 {
     width: 550px !important;
     height: 550px;
-    margin: 0 auto;
   }
 }
 
@@ -514,12 +514,12 @@
   position: relative;
   width: 320px !important;
   height: 320px;
+  margin: 0 auto;
 }
 @media only screen and (min-width: 1200px) {
   .img-3 {
     width: 520px !important;
     height: 520px;
-    margin: 0 auto;
   }
 }
 
@@ -616,6 +616,7 @@ svg {
 .img-4 {
   width: 320px !important;
   height: 320px;
+  margin: 0 auto;
   position: relative;
 }
 @media only screen and (min-width: 768px) {
@@ -628,7 +629,6 @@ svg {
   .img-4 {
     width: 500px !important;
     height: 500px;
-    margin: 0 auto;
   }
 }
 .img-4 img {
@@ -642,7 +642,7 @@ svg {
 }
 .img-4:after {
   position: absolute;
-  left: -30%;
+  left: -20%;
   top: -30%;
   z-index: -1;
   display: block;
