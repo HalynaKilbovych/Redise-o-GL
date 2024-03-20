@@ -640,17 +640,20 @@ svg {
   width: 100% !important;
   height: 100%;
 }
-.img-4:after {
+.img-4 linearGradient#gradient {
+  --color-top: #f12c06;
+  --color-bot: #faed34;
+}
+.img-4 svg {
   position: absolute;
-  left: -30%;
-  top: -30%;
-  z-index: -1;
-  display: block;
-  content: "";
-  width: 150%;
-  height: 120%;
-  background: url(https://svgshare.com/i/14W4.svg);
-  background-size: cover;
+  top: -103%;
+  left: -20%;
+  width: 130%;
+  z-index: -2;
+  filter: blur(20px);
+}
+.img-4 svg path {
+  fill: url(#gradient) !important;
 }
 
 /* .funnel-hero.funnel-eight */

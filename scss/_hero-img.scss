@@ -218,16 +218,26 @@ svg{
     height: 100%;
   }
   position: relative;
-  &:after {
-    position: absolute;
-    left: -30%;
-    top: -30%;
-    z-index: -1;
-    display: block;
-    content: "";
-    width: 150%;
-    height: 120%;
-    background: url(https://svgshare.com/i/14W4.svg); 
-    background-size: cover;
-  }
+
+
+linearGradient#gradient {
+  --color-top: #f12c06;
+  --color-bot: #faed34;
 }
+
+  svg { 
+    position: absolute;
+    top: -103%;
+    left: -20%;
+    width: 130%;
+    z-index: -2;
+    filter: blur(20px);
+  } 
+
+  svg path {
+      fill: url(#gradient)!important;
+  }
+
+
+}
+
