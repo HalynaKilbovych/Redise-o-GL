@@ -16,7 +16,6 @@
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.glmedialibrary.com/scripts/script.min.js"></script>
-    <script type="module" src="/js/img-svg.js"></script>
     <script
         type="text/javascript">var tipoFunnel = 'launch'; var funnel = 16166; var idPagina = 29942; var tipoPagina = 'cero'; var testAB = 'A'; var trafico = 1; var animations = false; var pageLang = 'es'; var showCookies = 'true'; var counterDataArray = []; var optimizeImg = true; var idIntegracionFB = ''; var idPixelFB = ''; var eventosFB = ''; var ppPred = 'true'; var ppUrl = '';</script>
     <style>
@@ -52,7 +51,7 @@
         <div class="container">
             <div class="wrap-flex">
                 <div class="image-layer">
-                    <div class="img-4">
+                    <div class="img-2">
                         <img
                         src="https://azure.glmedialibrary.com/glstorage/library/6/img63842996654108985543.png"
                         loading="lazy" style="width:auto; border-radius:10px; filter: drop-shadow(0 0 10px #2e0066);">
@@ -393,21 +392,20 @@
     </section>
 
     <script>
+        var img4 = document.querySelector('.img-4 img');
 
-            var img4 = document.querySelector('.img-4 img');
+        if (img4 !== null) {
+            var svg1 = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+            svg1.setAttribute("width", "1854");
+            svg1.setAttribute("height", "1508");
+            svg1.setAttribute("viewBox", "0 0 1854 1508");
 
-            var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-            svg.setAttribute("width", "1854");
-            svg.setAttribute("height", "1508");
-            svg.setAttribute("viewBox", "0 0 1854 1508");
-
-            var gradient = document.createElementNS("http://www.w3.org/2000/svg", "linearGradient");
-            gradient.setAttribute("id", "gradient"); 
-            gradient.setAttribute("x1", "0%");
-            gradient.setAttribute("y1", "0%");
-            gradient.setAttribute("x2", "100%");
-            gradient.setAttribute("y2", "100%");
-
+            var gradient1 = document.createElementNS("http://www.w3.org/2000/svg", "linearGradient");
+            gradient1.setAttribute("id", "gradient"); 
+            gradient1.setAttribute("x1", "0%");
+            gradient1.setAttribute("y1", "0%");
+            gradient1.setAttribute("x2", "100%");
+            gradient1.setAttribute("y2", "100%");
 
             var stop1 = document.createElementNS("http://www.w3.org/2000/svg", "stop");
             stop1.setAttribute("offset", "0%");
@@ -416,17 +414,58 @@
             stop2.setAttribute("offset", "100%");
             stop2.setAttribute("stop-color", "var(--color-bot)");
 
-            gradient.appendChild(stop1);
-            gradient.appendChild(stop2);
+            gradient1.appendChild(stop1);
+            gradient1.appendChild(stop2);
 
-            svg.appendChild(gradient);
-            var path = document.createElementNS("http://www.w3.org/2000/svg", "path");
-            path.setAttribute("d", "M1663 695.002C1818.5 814.002 1901 1033.5 1825 1119C1776.5 1213.7 1606 1231 1535 1231C1427.5 1231 1261 1291.5 1181.5 1359.5C1102 1427.5 957.5 1516 836.5 1507C695.5 1496.51 711 1456 656 1351C601 1246 503.885 1140.1 412 1073.5C320.116 1006.9 61.5952 810.55 21.5002 737.502C-18.5949 664.455 -2 447.5 82.5003 395.283C157 335.001 678.568 360.783 790.5 335.001C902.432 310.294 1297 46.2836 1422 17.502C2017 -119.498 1553 610.822 1663 695.002Z");
-            path.setAttribute("fill", "url(#grad)"); 
+            svg1.appendChild(gradient1);
+            var path1 = document.createElementNS("http://www.w3.org/2000/svg", "path");
+            path1.setAttribute("d", "M1663 695.002C1818.5 814.002 1901 1033.5 1825 1119C1776.5 1213.7 1606 1231 1535 1231C1427.5 1231 1261 1291.5 1181.5 1359.5C1102 1427.5 957.5 1516 836.5 1507C695.5 1496.51 711 1456 656 1351C601 1246 503.885 1140.1 412 1073.5C320.116 1006.9 61.5952 810.55 21.5002 737.502C-18.5949 664.455 -2 447.5 82.5003 395.283C157 335.001 678.568 360.783 790.5 335.001C902.432 310.294 1297 46.2836 1422 17.502C2017 -119.498 1553 610.822 1663 695.002Z");
+            path1.setAttribute("fill", "url(#gradient1)"); 
 
-            svg.appendChild(path);
-            img4.parentNode.insertBefore(svg, img4.nextSibling);
+            svg1.appendChild(path1);
+            img4.parentNode.insertBefore(svg1, img4.nextSibling);
+        }
 
+
+        var img3 = document.querySelector('.img-3 img');
+
+        if (img3 !== null) {
+            var gradient2 = document.createElementNS("http://www.w3.org/2000/svg", "linearGradient");
+            gradient2.setAttribute("id", "gradient2");
+            gradient2.setAttribute("x1", "0%");
+            gradient2.setAttribute("y1", "0%");
+            gradient2.setAttribute("x2", "100%");
+            gradient2.setAttribute("y2", "100%");
+
+            var stop3 = document.createElementNS("http://www.w3.org/2000/svg", "stop");
+            stop3.setAttribute("stop-color", "var(--color-top)");
+            var stop4 = document.createElementNS("http://www.w3.org/2000/svg", "stop");
+            stop4.setAttribute("offset", "1");
+            stop4.setAttribute("stop-color", "var(--color-bot)");
+
+            gradient2.appendChild(stop3);
+            gradient2.appendChild(stop4);
+
+            var defs = document.createElementNS("http://www.w3.org/2000/svg", "defs");
+            defs.appendChild(gradient2);
+
+            for (var i = 0; i < 4; i++) {
+                var svg2 = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+                svg2.setAttribute("width", "97");
+                svg2.setAttribute("height", "178");
+                svg2.setAttribute("viewBox", "0 0 97 178");
+
+                var path2 = document.createElementNS("http://www.w3.org/2000/svg", "path");
+                path2.setAttribute("d", "M47.1027 70.2387C49.8845 52.7535 71.7403 34.0761 88.8288 33.6787C90.021 33.6787 91.2132 33.2813 92.008 32.4866C92.8034 32.0892 93.5975 31.6918 93.9956 30.4996C99.9564 19.3726 96.7773 10.63 86.8425 3.47698C75.3182 -4.86825 57.0382 3.47697 47.8975 11.0274C24.8488 30.1022 1.40271 63.0857 2.59488 94.4796C-1.37903 115.542 -0.584258 138.193 5.37596 156.87C9.34988 168.792 20.8742 174.753 32.7966 175.547C44.7184 176.343 69.3566 179.919 80.0862 172.766C90.8151 165.613 91.6106 151.704 92.8027 139.783C93.9949 126.669 97.5714 102.03 86.4445 91.6979C75.3175 81.7631 43.1288 92.4927 47.1027 70.2387Z");
+                path2.setAttribute("fill", "url(#gradient2)");
+
+                svg2.appendChild(path2);
+                svg2.appendChild(defs); 
+
+                img3.parentNode.insertBefore(svg2, img3.nextSibling);
+            }
+        }
+             
     </script>
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/48b8808c00.js" defer></script>
     <link href="https://fonts.googleapis.com" rel="preconnect">
