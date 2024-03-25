@@ -1110,7 +1110,7 @@ section:not(.funnel-hero.funnel-four) .img-1:hover::after, .designImg .img-1:hov
   transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
   width: 120px;
   z-index: -10;
-  animation: moveRight 2s linear infinite;
+  animation: moveRight 3s linear infinite;
 }
 
 @keyframes moveRight {
