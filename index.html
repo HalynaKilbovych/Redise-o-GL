@@ -51,8 +51,8 @@
         <div class="container">
             <div class="wrap-flex">
                 <div class="image-layer">
-                    <div class="img-4">
-                        <img style="--color-top: rgb(0, 255, 166); --color-bot: blue;"
+                    <div class="img-3" style="--color-top: rgb(0, 255, 166); --color-bot: blue;">
+                        <img
                         src="https://azure.glmedialibrary.com/glstorage/library/6/img63842996654108985543.png"
                         loading="lazy" style="width:auto; border-radius:10px; filter: drop-shadow(0 0 10px #2e0066);">
                     </div>
@@ -393,7 +393,7 @@
 
     <script>
 
-        var img4Elements = document.querySelectorAll('.img-4 img');
+        var img4Elements = document.querySelectorAll('.img-4');
 
 
         img4Elements.forEach(function(img4) {
@@ -437,11 +437,11 @@
             svg1.appendChild(path1);
 
 
-            img4.parentNode.insertBefore(svg1, img4.nextSibling);
+            img4.appendChild(svg1);
         });
 
 
-        var img3Elements = document.querySelectorAll('.img-3 img');
+        var img3Elements = document.querySelectorAll('.img-3');
 
         img3Elements.forEach(function(img3) {
             var colorTop = img3.style.getPropertyValue('--color-top');
@@ -481,7 +481,7 @@
                     path2.setAttribute("fill", "url(#gradient2)");
 
                     cloneSvg.appendChild(path2);
-                    img3.parentNode.insertBefore(cloneSvg, img3.nextSibling);
+                    img3.appendChild(cloneSvg, img3.nextSibling);
                 }
             }
         });
