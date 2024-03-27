@@ -131,12 +131,6 @@
     } 
 }
 
-linearGradient#gradient2{
-  --color-top: #aa00ff;
-  --color-bot: #fae634;
-}
-
-
 }
 
 
@@ -200,7 +194,7 @@ linearGradient#gradient2{
       height: 500px;
 
   }
-      & img { 
+    & img { 
     position: relative;
     border-radius: 10px!important;
     object-fit: cover!important;
@@ -210,11 +204,6 @@ linearGradient#gradient2{
   }
   position: relative;
 
-
-linearGradient#gradient {
-  --color-top: #f12c06;
-  --color-bot: #faed34;
-}
 
   svg { 
     position: absolute;

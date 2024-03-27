@@ -998,10 +998,6 @@ section:not(.funnel-hero.funnel-four) .img-1:hover::after, .designImg .img-1:hov
     rotate: 180deg;
   }
 }
-.img-3 linearGradient#gradient2 {
-  --color-top: #aa00ff;
-  --color-bot: #fae634;
-}
 
 .animate-img {
   height: 400px;
@@ -1067,10 +1063,6 @@ section:not(.funnel-hero.funnel-four) .img-1:hover::after, .designImg .img-1:hov
   filter: none !important;
   width: 100% !important;
   height: 100%;
-}
-.img-4 linearGradient#gradient {
-  --color-top: #f12c06;
-  --color-bot: #faed34;
 }
 .img-4 svg {
   position: absolute;
