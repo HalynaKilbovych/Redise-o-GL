@@ -51,7 +51,7 @@
   margin: 0 auto; 
 
   @media only screen and (min-width: 1200px) {
-      width: 520px!important;;
+      width: 520px!important;
       height: 520px;
 
   }
@@ -147,10 +147,11 @@
 }
 
   & img { 
+    object-fit: cover!important;
+    filter: none!important;
   height: 100%;
   -webkit-animation: liquid 7s ease-in-out infinite;
   animation: liquid 7s ease-in-out infinite;
-  object-fit: cover!important;
   border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   }
@@ -200,7 +201,6 @@
     border-radius: 10px!important;
     object-fit: cover!important;
     filter: none!important;
-    width: 100%!important;
     height: 100%;
   }
 
@@ -232,6 +232,11 @@
 
 }
 
+
+.img-4 { 
+  width: initial!important;
+  height: initial!important; 
+}
   
 .container-btn.custom-btn>.btn-gl.btn-animate-1 { 
   position: relative;

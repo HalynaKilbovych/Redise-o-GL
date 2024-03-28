@@ -1012,10 +1012,11 @@ section:not(.funnel-hero.funnel-four) .img-1:hover::after, .designImg .img-1:hov
   }
 }
 .animate-img img {
-  height: 100%;
-  animation: liquid 7s ease-in-out infinite;
   -o-object-fit: cover !important;
      object-fit: cover !important;
+  filter: none !important;
+  height: 100%;
+  animation: liquid 7s ease-in-out infinite;
   border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
 }
@@ -1061,7 +1062,6 @@ section:not(.funnel-hero.funnel-four) .img-1:hover::after, .designImg .img-1:hov
   -o-object-fit: cover !important;
      object-fit: cover !important;
   filter: none !important;
-  width: 100% !important;
   height: 100%;
 }
 .img-4 svg {
@@ -1084,6 +1084,11 @@ section:not(.funnel-hero.funnel-four) .img-1:hover::after, .designImg .img-1:hov
 }
 .img-4 svg path {
   fill: url(#gradient) !important;
+}
+
+.img-4 {
+  width: initial !important;
+  height: initial !important;
 }
 
 .container-btn.custom-btn > .btn-gl.btn-animate-1 {
