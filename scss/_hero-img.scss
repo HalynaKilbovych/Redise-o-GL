@@ -136,11 +136,8 @@
 .animate-img {
   height: 400px;
   width: 100%;
-  background: url("https://azure.glmedialibrary.com/glstorage/library/6/img63842996654108985543.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-     -webkit-animation: liquid 7s ease-in-out infinite;
+  position: relative;
+  -webkit-animation: liquid 7s ease-in-out infinite;
   animation: liquid 7s ease-in-out infinite;
   border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
@@ -150,7 +147,12 @@
 }
 
   & img { 
-    display: none;
+  height: 100%;
+  -webkit-animation: liquid 7s ease-in-out infinite;
+  animation: liquid 7s ease-in-out infinite;
+  object-fit: cover!important;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   }
   
 }
@@ -180,8 +182,8 @@
 
 
 .img-4 { 
-  width: 320px!important;
-  height: 320px;
+  width: initial!important;
+  height: initial;
   margin: 0 auto;
   position: relative;
 
