@@ -1153,10 +1153,8 @@ section:not(.funnel-hero.funnel-four) .img-1:hover::after, .designImg .img-1:hov
   animation-play-state: none;
 }
 
-.container-btn.custom-btn > .btn-gl.btn-animate-3 {
-  place-content: center;
-  color: white;
-  text-shadow: 0 1px 0 #000;
+.container-btn.custom-btn > .btn-gl.btn-15 {
+  cursor: pointer;
   --border-angle: 0turn;
   --main-bg: conic-gradient(
       from var(--border-angle),
@@ -1176,7 +1174,7 @@ section:not(.funnel-hero.funnel-four) .img-1:hover::after, .designImg .img-1:hov
     --border-angle: 1turn;
   }
 }
-.container-btn.custom-btn > .btn-gl.btn-animate-3:hover {
+.container-btn.custom-btn > .btn-gl.btn-15:hover {
   animation-play-state: paused;
 }
 
