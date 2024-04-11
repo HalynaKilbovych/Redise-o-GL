@@ -911,7 +911,7 @@ section:not(.funnel-hero.funnel-four) .img-1:hover::after, .designImg .img-1:hov
      object-fit: cover !important;
   filter: none !important;
   width: 100% !important;
-  height: 100%;
+  height: 100%!important;
   border-radius: 10px !important;
 }
 
@@ -1181,4 +1181,15 @@ section:not(.funnel-hero.funnel-four) .img-1:hover::after, .designImg .img-1:hov
   syntax: "<angle>";
   inherits: true;
   initial-value: 0turn;
+}
+
+// Cent the button in the hero on mobile 
+
+@media only screen and (max-width: 768px) {
+  .funnel-hero .container-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
