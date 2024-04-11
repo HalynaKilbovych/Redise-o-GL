@@ -539,25 +539,15 @@
   text-align: left;
 }
 
-.funnel-hero.funnel-eight .funnel-sec-title span {
-  color: var(--primary) !important;
-  display: none;
-}
-
-.funnel-hero.funnel-eight .funnel-text strong {
-  color: var(--primary) !important;
-}
-
 .funnel-hero.funnel-eight .container-btn {
   width: 90%;
 }
 
-.funnel-hero.funnel-eight .container-btn.custom-btn {
+/* .funnel-hero.funnel-eight .container-btn.custom-btn {
   display: flex;
   gap: 40px;
   flex-direction: column;
-}
-
+} */
 .funnel-hero.funnel-eight .funnel-title span {
   font-size: 32px;
 }
@@ -573,11 +563,11 @@
   .funnel-hero.funnel-eight .funnel-title span {
     font-size: 65px;
   }
-  .funnel-hero.funnel-eight .container-btn.custom-btn {
+  /* .funnel-hero.funnel-eight .container-btn.custom-btn {
     display: flex;
     gap: 40px;
     flex-direction: row;
-  }
+  } */
   .funnel-hero.funnel-eight .container-btn {
     width: 100%;
   }
@@ -858,6 +848,7 @@ section:not(.funnel-hero.funnel-four) .img-1:hover::after, .designImg .img-1:hov
 .funnel-hero.funnel-ten .funnel-title span {
   font-size: 32px;
 }
+
 @media only screen and (min-width: 768px) {
   .funnel-hero.funnel-ten .wrap-flex {
     flex-wrap: nowrap;
@@ -879,13 +870,12 @@ section:not(.funnel-hero.funnel-four) .img-1:hover::after, .designImg .img-1:hov
     line-height: 1.4;
   }
 }
-
 .img-2 {
   position: relative;
   width: 320px !important;
-  height: 320px;
   margin: 0 auto;
 }
+
 @media only screen and (min-width: 768px) {
   .img-2 {
     width: 350px !important;
@@ -898,7 +888,6 @@ section:not(.funnel-hero.funnel-four) .img-1:hover::after, .designImg .img-1:hov
     height: 550px;
   }
 }
-
 .img-2::after {
   position: absolute;
   width: 125%;
@@ -916,7 +905,7 @@ section:not(.funnel-hero.funnel-four) .img-1:hover::after, .designImg .img-1:hov
 
 .img-2 img {
   -o-object-fit: cover !important;
-     object-fit: cover !important;
+  object-fit: cover !important;
   filter: none !important;
   width: 100% !important;
   height: 100%;
@@ -929,21 +918,22 @@ section:not(.funnel-hero.funnel-four) .img-1:hover::after, .designImg .img-1:hov
   height: 320px;
   margin: 0 auto;
 }
+
 @media only screen and (min-width: 1200px) {
   .img-3 {
     width: 520px !important;
     height: 520px;
   }
 }
-
 .img-3 img {
   border-radius: 250px !important;
   -o-object-fit: cover !important;
-     object-fit: cover !important;
+  object-fit: cover !important;
   filter: none !important;
   width: 100% !important;
   height: 100%;
 }
+
 .img-3 img svg {
   width: 50px;
 }
@@ -951,18 +941,21 @@ section:not(.funnel-hero.funnel-four) .img-1:hover::after, .designImg .img-1:hov
 .img-3 {
   position: relative;
 }
+
 .img-3 svg:nth-child(2) {
   width: 9%;
   position: absolute;
   bottom: 60%;
   right: 0%;
 }
+
 .img-3 svg:nth-child(3) {
   width: 9%;
   position: absolute;
   bottom: 60%;
   right: 10%;
 }
+
 .img-3 svg:nth-child(4) {
   width: 9%;
   position: absolute;
@@ -970,6 +963,7 @@ section:not(.funnel-hero.funnel-four) .img-1:hover::after, .designImg .img-1:hov
   left: 15%;
   rotate: 180deg;
 }
+
 .img-3 svg:nth-child(5) {
   width: 9%;
   position: absolute;
@@ -977,6 +971,7 @@ section:not(.funnel-hero.funnel-four) .img-1:hover::after, .designImg .img-1:hov
   left: 5%;
   rotate: 180deg;
 }
+
 @media only screen and (min-width: 1200px) {
   .img-3 svg:nth-child(2) {
     bottom: 70%;
@@ -997,7 +992,6 @@ section:not(.funnel-hero.funnel-four) .img-1:hover::after, .designImg .img-1:hov
     rotate: 180deg;
   }
 }
-
 .animate-img {
   height: 400px;
   width: 100%;
@@ -1006,6 +1000,7 @@ section:not(.funnel-hero.funnel-four) .img-1:hover::after, .designImg .img-1:hov
   border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
 }
+
 @media only screen and (min-width: 1200px) {
   .animate-img {
     height: 600px;
@@ -1013,7 +1008,7 @@ section:not(.funnel-hero.funnel-four) .img-1:hover::after, .designImg .img-1:hov
 }
 .animate-img img {
   -o-object-fit: cover !important;
-     object-fit: cover !important;
+  object-fit: cover !important;
   filter: none !important;
   height: 100%;
   animation: liquid 7s ease-in-out infinite;
@@ -1045,6 +1040,7 @@ section:not(.funnel-hero.funnel-four) .img-1:hover::after, .designImg .img-1:hov
   margin: 0 auto;
   position: relative;
 }
+
 @media only screen and (min-width: 768px) {
   .img-4 {
     width: 350px !important;
@@ -1060,10 +1056,11 @@ section:not(.funnel-hero.funnel-four) .img-1:hover::after, .designImg .img-1:hov
 .img-4 img {
   border-radius: 10px !important;
   -o-object-fit: cover !important;
-     object-fit: cover !important;
+  object-fit: cover !important;
   filter: none !important;
   height: 100%;
 }
+
 .img-4 svg {
   position: absolute;
   height: 120%;
@@ -1073,6 +1070,7 @@ section:not(.funnel-hero.funnel-four) .img-1:hover::after, .designImg .img-1:hov
   z-index: -2;
   filter: blur(20px);
 }
+
 @media only screen and (min-width: 768px) {
   .img-4 svg {
     height: 140%;
@@ -1095,6 +1093,7 @@ section:not(.funnel-hero.funnel-four) .img-1:hover::after, .designImg .img-1:hov
   position: relative;
   overflow: hidden;
 }
+
 .container-btn.custom-btn > .btn-gl.btn-animate-1:after {
   border-radius: 0;
   background: #ffffff !important;
@@ -1176,6 +1175,7 @@ section:not(.funnel-hero.funnel-four) .img-1:hover::after, .designImg .img-1:hov
   background-position: center center;
   animation: bg-spin 3s linear infinite;
 }
+
 @keyframes bg-spin {
   to {
     --border-angle: 1turn;
