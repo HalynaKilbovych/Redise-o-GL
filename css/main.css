@@ -873,6 +873,7 @@ section:not(.funnel-hero.funnel-four) .img-1:hover::after, .designImg .img-1:hov
 .img-2 {
   position: relative;
   width: 320px !important;
+  height: 320px !important;
   margin: 0 auto;
 }
 
@@ -1197,4 +1198,7 @@ section:not(.funnel-hero.funnel-four) .img-1:hover::after, .designImg .img-1:hov
     justify-content: center;
     align-items: center;
   }
+}
+.funnel-hero.funnel-six .btn-gl:nth-child(2) {
+  display: none;
 }
