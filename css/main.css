@@ -1191,7 +1191,7 @@ section:not(.funnel-hero.funnel-four) .img-1:hover::after, .designImg .img-1:hov
   inherits: true;
   initial-value: 0turn;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
   .funnel-hero .container-btn {
     display: flex;
     flex-wrap: wrap;
