@@ -1184,7 +1184,7 @@ section:not(.funnel-hero.funnel-four) .img-1:hover::after, .designImg .img-1:hov
   initial-value: 0turn;
 }
 
-// Cent the button in the hero on mobile 
+// Center the button in the hero on mobile 
 
 @media only screen and (max-width: 1200px) {
   .funnel-hero .container-btn {
@@ -1200,3 +1200,51 @@ section:not(.funnel-hero.funnel-four) .img-1:hover::after, .designImg .img-1:hov
   display: none;
 }
  
+
+.funnel-hero.funnel-four .btn-gl:nth-child(2) {
+  display: none;
+} 
+
+
+
+// FIX funnel-four  
+ 
+@media only screen and (max-width: 768px) { 
+
+.funnel-hero.funnel-four .img { 
+  position: relative;
+  margin: 0 auto;
+}
+
+.funnel-hero.funnel-four .img img{ 
+  height: 100%!important;
+
+}  
+.funnel-hero.funnel-four .container .wrap-flex .info-layer { 
+  padding: 7rem 1rem 1em;
+}
+}
+
+@media only screen and (min-width: 768px) { 
+
+  .funnel-hero.funnel-four .container .wrap-flex {
+    align-items: center;
+    flex-flow: row;
+} 
+.funnel-hero.funnel-four .img { 
+  position: absolute;
+  height: 100%;
+  top: 0;
+}
+
+.funnel-hero.funnel-four .img img{ 
+  height: 100%!important;
+} 
+  }
+
+
+
+
+// .wrap-flex { 
+//   position: relative;
+// }
