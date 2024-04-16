@@ -1277,3 +1277,14 @@ section:not(.funnel-hero.funnel-four) .img-1:hover::after, .designImg .img-1:hov
   padding: 7rem 1rem 0.5rem;
 }
 }
+
+.funnel-testimonials {
+  padding: 5rem 0 3rem;
+}
+
+
+@media only screen and (max-width: 768px) {  
+  .funnel-testimonials {
+    padding: 5rem 0 3rem;
+  }  
+}
