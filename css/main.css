@@ -1207,29 +1207,25 @@ section:not(.funnel-hero.funnel-four) .img-1:hover::after, .designImg .img-1:hov
   display: none;
 }
 
-@media only screen and (max-width: 768px) {
-  .funnel-hero.funnel-four .img {
-    position: relative;
-    margin: 0 auto;
-  }
-  .funnel-hero.funnel-four .img img {
-    height: 100% !important;
-  }
-  .funnel-hero.funnel-four .container .wrap-flex .info-layer {
-    padding: 7rem 1rem 1em;
+@media only screen and (min-width: 1200px) {
+  .funnel-hero.funnel-four .image-layer {
+    display: none;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
   .funnel-hero.funnel-four .container .wrap-flex {
     align-items: center;
     flex-flow: row;
   }
   .funnel-hero.funnel-four .img {
-    position: absolute;
-    height: 100%;
-    top: 0;
+    opacity: 0;
   }
+}
+@media only screen and (max-width: 768px) {
   .funnel-hero.funnel-four .img img {
     height: 100% !important;
+  }
+  .funnel-hero.funnel-four .container .wrap-flex .info-layer {
+    padding: 7rem 1rem 0.5rem;
   }
 }
