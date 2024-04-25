@@ -41,6 +41,8 @@
       padding-bottom: 38px;
     }
   </style>
+
+<link href="./css/new.min.css" rel="stylesheet">
 </head>
 
 <body style='display: flex; flex-direction: column !important; display:none'>
@@ -49,8 +51,8 @@
       <!-- AÑADIR EL BOTÓN AL HEADER SIEMPRE A LA DERECHA, IMPORTANTE DE COMO SE VERIA EN MOVIL NO SE SI PONER EL ICONO "HAMBURGUESA"
   TAMBIEN UNA CLASE AUXILIAR PARA QUE EL MENÚ SEA STICKY O NO 
   -->
-    <div class="wrap-head">
-      <div class="container left">
+    <div class="wrap-head sticky">
+      <div  class="container center">
         <div class="logo-funnel"> <img alt="Logo" loading="lazy" src="https://kit.glmedialibrary.com/6/logo.png"
             style="height:60px!important">
           </div>
@@ -59,13 +61,12 @@
             <a href="">ITEM-2</a>
             <a href="">ITEM-3</a>
             <a href="">ITEM-4</a>
-          </div>
-
-          <div style="--primary-cta:68,68,68;--secondary-cta:0,0,0;--third-cta:254,210,0;--textCTA:255,255,255;"
-          class="container-btn custom-btn " id="btn50969">
-          <div class="btn-gl btn-2 btn-sm_ btn-solid "><a onclick="goButton('btn50969','#','_self' )"><i
+            <div style="--primary-cta:68,68,68;--secondary-cta:0,0,0;--third-cta:254,210,0;--textCTA:255,255,255;"
+            class="container-btn custom-btn header-btn" id="btn50969">
+            <div class="btn-gl btn-2 btn-sm_ btn-solid "><a onclick="goButton('btn50969','#','_self' )"><i
                 class="fas fa-globe"></i>Ver más </a></div>
         </div>
+          </div>
       </div>
     </div>
   </header>
@@ -358,7 +359,23 @@
       </div>
     </div>
   </section>
- 
+
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      const container = document.querySelector('.wrap-head .container');
+  
+      if (container.classList.contains('center')) {
+        const logoFunnel = document.querySelector('.wrap-head .logo-funnel');
+        const headerNav = document.querySelector('.wrap-head .header-nav');
+        const headerBtn = document.querySelector('.wrap-head .header-btn');
+  
+        const secondNavItem = headerNav.children[1];
+        headerNav.insertBefore(logoFunnel, secondNavItem.nextSibling);
+  
+        container.appendChild(headerBtn);
+      }
+    });
+  </script>
   <link href="https://kit.glmedialibrary.com/styles/css.css" rel="stylesheet" defer id="estiloscss">
   <script> var cssLink = document.getElementById('estiloscss'); var timestamp = new Date().toISOString().replace(/[^0-9]/g, "").slice(0, 10); cssLink.href += "?v=" + timestamp; </script>
   <link href="https://kit.glmedialibrary.com/styles/main.css" rel="stylesheet" defer id="maincss">
