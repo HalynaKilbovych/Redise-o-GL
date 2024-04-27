@@ -52,23 +52,46 @@
   TAMBIEN UNA CLASE AUXILIAR PARA QUE EL MENÚ SEA STICKY O NO 
   -->
     <div class="wrap-head sticky">
-      <div  class="container center">
+      <div  class="container left">
         <div class="logo-funnel"> <img alt="Logo" loading="lazy" src="https://kit.glmedialibrary.com/6/logo.png"
             style="height:60px!important">
           </div>
           <div class="header-nav">
-            <a href="">ITEM-1</a>
-            <a href="">ITEM-2</a>
-            <a href="">ITEM-3</a>
-            <a href="">ITEM-4</a>
+            <a class="header-nav-item" href="">ITEM-1</a>
+            <a class="header-nav-item" href="">ITEM-2</a>
+            <a class="header-nav-item"href="">ITEM-3</a>
+            <div class="dropdown">
+              <button class="dropbtn">DROPDOWN</button>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
             <div style="--primary-cta:68,68,68;--secondary-cta:0,0,0;--third-cta:254,210,0;--textCTA:255,255,255;"
             class="container-btn custom-btn header-btn" id="btn50969">
             <div class="btn-gl btn-2 btn-sm_ btn-solid "><a onclick="goButton('btn50969','#','_self' )"><i
                 class="fas fa-globe"></i>Ver más </a></div>
         </div>
           </div>
+
+          <div id="menuToggle" class="mob-menu-nav">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+      
+            <div class="mob-menu">
+              <a href="">ITEM-1</a>
+              <a href="">ITEM-2</a>
+              <a href="">ITEM-3</a>
+            </div>
+          </div>
       </div>
     </div>
+
+
+
   </header>
   
   <!-- SECCIÓN CARACTERISTICAS tiene 3 clases funnel-one funnel-two funnel-three  HAY QUE CREAR funnel-four y funnel-five-->
@@ -376,6 +399,7 @@
       }
     });
   </script>
+
   <link href="https://kit.glmedialibrary.com/styles/css.css" rel="stylesheet" defer id="estiloscss">
   <script> var cssLink = document.getElementById('estiloscss'); var timestamp = new Date().toISOString().replace(/[^0-9]/g, "").slice(0, 10); cssLink.href += "?v=" + timestamp; </script>
   <link href="https://kit.glmedialibrary.com/styles/main.css" rel="stylesheet" defer id="maincss">
