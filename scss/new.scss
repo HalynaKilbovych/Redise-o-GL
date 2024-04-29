@@ -47,7 +47,7 @@ header {
     position: relative;
 }
 
-.wrap-head .container.center .header-btn{ 
+.wrap-head .container.center .header-btn-desk{ 
     position: absolute;
     right: 0;
 }
@@ -219,10 +219,11 @@ header {
     .mob-menu
     {
       position: absolute;
+      top: -20px;
+      right: 0;
       width: 300px;
-      margin: -100px 0 0 -170px;
       padding: 50px;
-      padding-top: 105px;
+
       display: flex;
       gap: 50px;
       flex-direction: column;
@@ -231,10 +232,9 @@ header {
       list-style-type: none;
       -webkit-font-smoothing: antialiased;
       
-      transform-origin: 0% 0%;
-      transform: translate(100%, 0);
-      
-      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.5s ease, visibility 0.5s ease, margin-left 0.5s ease; 
     }
     
     .mob-menu a
@@ -245,7 +245,9 @@ header {
     
     #menuToggle input:checked ~ .mob-menu
     {
-      transform: none;
+      opacity: 1;
+      visibility: visible;
+      margin-left: 0; 
     }
     
     .mob-menu-list { 
@@ -292,5 +294,6 @@ header {
   @media only screen and (max-width: 768px) { 
     .wrap-head .container.center { 
       justify-content: space-between!important;
+      align-items: center;
     }
   }
