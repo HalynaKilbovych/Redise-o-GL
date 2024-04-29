@@ -127,8 +127,6 @@ header {
     #menuToggle
     {
       display: block;
-      position: absolute;
-      right: 40px;
       z-index: 1;
       
       -webkit-user-select: none;
@@ -221,7 +219,7 @@ header {
     {
       position: absolute;
       width: 300px;
-      margin: -100px 0 0 -220px;
+      margin: -100% 0 0 -100%;
       padding: 50px;
       padding-top: 105px;
       display: flex;
