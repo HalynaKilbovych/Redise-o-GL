@@ -52,7 +52,7 @@
   TAMBIEN UNA CLASE AUXILIAR PARA QUE EL MENÚ SEA STICKY O NO 
   -->
     <div class="wrap-head">
-      <div  class="container left">
+      <div  class="container center">
         <div class="logo-funnel"> <img alt="Logo" loading="lazy" src="https://kit.glmedialibrary.com/6/logo.png"
             style="height:60px!important">
           </div>
@@ -401,18 +401,26 @@
 
   <script>
     window.addEventListener('DOMContentLoaded', (event) => {
-      const container = document.querySelector('.wrap-head .container');
-  
-      if (container.classList.contains('center')) {
+      // Функція, яка буде викликатися при зміні розміру вікна
+      const handleResize = () => {
+        const container = document.querySelector('.wrap-head .container');
         const logoFunnel = document.querySelector('.wrap-head .logo-funnel');
         const headerNav = document.querySelector('.wrap-head .header-nav');
-        const headerBtn = document.querySelector('.wrap-head .header-btn');
+        const headerBtn = document.querySelector('.wrap-head .header-btn-desk');
   
-        const secondNavItem = headerNav.children[1];
-        headerNav.insertBefore(logoFunnel, secondNavItem.nextSibling);
+        // Перевіряємо ширину вікна
+        if (window.innerWidth >= 768 && container.classList.contains('center')) {
+          const secondNavItem = headerNav.children[1];
+          headerNav.insertBefore(logoFunnel, secondNavItem.nextSibling);
+          container.insertBefore(headerBtn, container.firstChild);
+        }
+      };
   
-        container.appendChild(headerBtn);
-      }
+      // Викликаємо функцію обробки при завантаженні сторінки
+      handleResize();
+  
+      // Додаємо обробник події для зміни розміру вікна
+      window.addEventListener('resize', handleResize);
     });
   </script>
 

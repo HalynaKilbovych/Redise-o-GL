@@ -56,7 +56,7 @@ header {
   .wrap-head {
     min-height: 80px;
   } 
-    .wrap-head .header-nav-item  { 
+    .wrap-head .header-nav  { 
         display: none;
     }
 
@@ -267,8 +267,25 @@ header {
     }
   } 
 
+  .header-btn .header-btn-mob { 
+    display: none;
+  }
+
 
   .header-nav-item { 
     flex: 6 0 auto;
 
+  }
+
+
+
+  .wrap-head .container.center .header-btn-desk { 
+    position: absolute;
+    right: 0;
+  }
+
+  @media only screen and (max-width: 768px) { 
+    .wrap-head .container.center { 
+      justify-content: space-between!important;
+    }
   }
