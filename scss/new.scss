@@ -281,9 +281,14 @@ header {
 
   .wrap-head .container.center .header-btn-desk { 
     position: absolute;
+    top: 5px;
     right: 0;
   }
 
+  .header-btn-desk { 
+    width: auto!important;
+
+  }
   @media only screen and (max-width: 768px) { 
     .wrap-head .container.center { 
       justify-content: space-between!important;
