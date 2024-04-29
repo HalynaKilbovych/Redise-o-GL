@@ -53,6 +53,9 @@ header {
 }
 
 @media only screen and (max-width: 768px) {
+  .wrap-head {
+    min-height: 80px;
+  } 
     .wrap-head .header-nav-item  { 
         display: none;
     }
@@ -76,6 +79,7 @@ header {
     padding: 16px;
     font-size: 16px;
     border: none;
+    background: none;
   }
   
   .dropdown {
@@ -109,6 +113,10 @@ header {
     padding: 0;
   }
 
+  .dropdown-mob { 
+    padding: 10px 0;
+  }
+
   .dropdown .dropdown-mob { 
     margin-bottom: 100px;
   }
@@ -120,8 +128,7 @@ header {
     {
       display: block;
       position: absolute;
-      right: 10px;
-      top: 20px;
+      right: 40px;
       z-index: 1;
       
       -webkit-user-select: none;
@@ -214,10 +221,11 @@ header {
     {
       position: absolute;
       width: 300px;
-      margin: -100px 0 0 -250px;
+      margin: -100px 0 0 -220px;
       padding: 50px;
-      padding-top: 125px;
+      padding-top: 105px;
       display: flex;
+      gap: 50px;
       flex-direction: column;
       
       background: #ededed;
@@ -241,6 +249,10 @@ header {
       transform: none;
     }
     
+    .mob-menu-list { 
+      display: flex;
+      flex-direction: column;
+    }
     
     
   }
