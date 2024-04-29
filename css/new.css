@@ -70,6 +70,7 @@ header {
   font-size: 16px;
   border: none;
   background: none;
+  color: inherit;
 }
 
 .dropdown {
@@ -204,7 +205,7 @@ header {
   }
 }
 .header-btn-mob {
-  margin-top: 100px;
+  margin-top: 180px;
 }
 
 @media only screen and (min-width: 768px) {
