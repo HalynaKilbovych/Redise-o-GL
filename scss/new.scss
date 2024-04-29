@@ -76,7 +76,6 @@ header {
 }
 
 .dropbtn {
-    padding: 16px;
     font-size: 16px;
     border: none;
     background: none;
@@ -127,6 +126,7 @@ header {
     #menuToggle
     {
       display: block;
+      position: relative;
       z-index: 1;
       
       -webkit-user-select: none;
@@ -219,7 +219,7 @@ header {
     {
       position: absolute;
       width: 300px;
-      margin: -100% 0 0 -100%;
+      margin: -100px 0 0 -170px;
       padding: 50px;
       padding-top: 105px;
       display: flex;
@@ -252,8 +252,12 @@ header {
       flex-direction: column;
     }
     
-    
   }
+
+  
+.header-btn-mob { 
+  margin-top: 100px;
+}
 
 
   @media only screen and (min-width: 768px) {
@@ -261,3 +265,9 @@ header {
         display: none;
     }
   } 
+
+
+  .header-nav-item { 
+    flex: 6 0 auto;
+
+  }
