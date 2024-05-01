@@ -53,15 +53,14 @@
   TAMBIEN UNA CLASE AUXILIAR PARA QUE EL MENÚ SEA STICKY O NO 
   -->
     <div class="wrap-head">
-      <div  class="container right">
+      <div  class="container center">
         <div class="logo-funnel"> <img alt="Logo" loading="lazy" src="https://kit.glmedialibrary.com/6/logo.png"
             style="height:60px!important">
           </div>
           <div class="header-nav">
             <a class="header-nav-item" href="">ITEM-1</a>
             <a class="header-nav-item" href="">ITEM-2</a>
-            <a class="header-nav-item"href="">ITEM-3</a>
-            <div class="dropdown dropdown-desk">
+            <div class="dropdown dropdown-desk header-nav-item">
               <button class="dropbtn">DROPDOWN</button>
               <div class="dropdown-content">
                 <a href="#">Link 1</a>
@@ -69,6 +68,11 @@
                 <a href="#">Link 3</a>
               </div>
             </div>
+            <a class="header-nav-item" href="">ITEM-4</a>
+            <a class="header-nav-item" href="">ITEM-5</a>
+            <a class="header-nav-item" href="">ITEM-6</a>
+            <a class="header-nav-item" href="">ITEM-7</a>
+            <a class="header-nav-item" href="">ITEM-7</a>
             <div style="--primary-cta:68,68,68;--secondary-cta:0,0,0;--third-cta:254,210,0;--textCTA:255,255,255;"
             class="container-btn custom-btn header-btn-desk" id="btn50969">
             <div class="btn-gl btn-2 btn-sm_ btn-solid "><a onclick="goButton('btn50969','#','_self' )"><i
@@ -95,7 +99,6 @@
                   <a href="#">Link 3</a>
                 </div>
               </div>
-
             </div>
             <div style="--primary-cta:68,68,68;--secondary-cta:0,0,0;--third-cta:254,210,0;--textCTA:255,255,255;"
             class="container-btn custom-btn header-btn header-btn-mob" id="btn50969">
@@ -405,25 +408,34 @@
 
   <script>
     window.addEventListener('DOMContentLoaded', (event) => {
-      // Функція, яка буде викликатися при зміні розміру вікна
       const handleResize = () => {
         const container = document.querySelector('.wrap-head .container');
         const logoFunnel = document.querySelector('.wrap-head .logo-funnel');
         const headerNav = document.querySelector('.wrap-head .header-nav');
         const headerBtn = document.querySelector('.wrap-head .header-btn-desk');
-  
-        // Перевіряємо ширину вікна
+        
+        const navItems = headerNav.querySelectorAll('.header-nav-item');
+        const navItemsCount = navItems.length;
+        
         if (window.innerWidth >= 768 && container.classList.contains('center')) {
-          const secondNavItem = headerNav.children[1];
-          headerNav.insertBefore(logoFunnel, secondNavItem.nextSibling);
-          container.insertBefore(headerBtn, container.firstChild);
+          if (navItemsCount === 4 || navItemsCount === 5) {
+            const secondNavItem = navItems[1];
+            headerNav.insertBefore(logoFunnel, secondNavItem.nextSibling);
+            container.insertBefore(headerBtn, container.firstChild);
+          } else if (navItemsCount === 6 || navItemsCount === 7) {
+            const thirdNavItem = navItems[2];
+            headerNav.insertBefore(logoFunnel, thirdNavItem.nextSibling);
+            container.insertBefore(headerBtn, container.firstChild);
+          } else if (navItemsCount === 8) {
+            const fourthNavItem = navItems[3];
+            headerNav.insertBefore(logoFunnel, fourthNavItem.nextSibling);
+            container.insertBefore(headerBtn, container.firstChild);
+          }
         }
       };
   
-      // Викликаємо функцію обробки при завантаженні сторінки
       handleResize();
   
-      // Додаємо обробник події для зміни розміру вікна
       window.addEventListener('resize', handleResize);
     });
   </script>

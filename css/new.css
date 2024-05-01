@@ -229,7 +229,7 @@ header {
 
 .wrap-head .container.center .header-btn-desk {
   position: absolute;
-  top: 5px;
+  top: 10px;
   right: 0;
 }
 
@@ -242,4 +242,7 @@ header {
     justify-content: space-between !important;
     align-items: center;
   }
+}
+.wrap-head .container.center .logo-funnel {
+  flex: 6 0 auto;
 }
