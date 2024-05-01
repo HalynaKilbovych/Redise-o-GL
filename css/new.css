@@ -29,6 +29,10 @@ header {
   text-decoration: none;
 }
 
+.wrap-head.menu_hide {
+  display: none !important;
+}
+
 .wrap-head .container.right {
   display: flex;
   justify-content: space-between !important;
@@ -125,7 +129,7 @@ header {
     z-index: 1;
     -webkit-user-select: none;
     -moz-user-select: none;
-         user-select: none;
+    user-select: none;
   }
   #menuToggle a {
     text-decoration: none;
