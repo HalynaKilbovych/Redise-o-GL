@@ -703,8 +703,8 @@
 }
 
 .container-btn.custom-btn > .btn-gl.btn-sm_ a {
-  padding: 0.6rem 1rem;
-  font-size: 14px;
+  padding: .6rem 1rem;
+    font-size: 14px;
 }
 
 .container-btn.custom-btn > .btn-gl.btn-13 {
@@ -1224,6 +1224,7 @@ section:not(.funnel-hero.funnel-four) .img-1:hover::after, .designImg .img-1:hov
     padding: 5rem 0 3rem;
   }
 }
+
 header {
   position: relative;
 }
@@ -1232,7 +1233,6 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  min-height: 80px;
 }
 
 .wrap-head .container.left {
@@ -1255,11 +1255,9 @@ header {
 .header-nav a {
   text-decoration: none;
 }
-
-.wrap-head.menu_hide {
+.wrap-head.menu_hide{
   display: none !important;
 }
-
 .wrap-head .container.right {
   display: flex;
   justify-content: space-between !important;
@@ -1277,10 +1275,7 @@ header {
 
 .wrap-head .container.center .header-btn-desk {
   position: absolute;
-  top: 0;
   right: 0;
-  display: flex;
-  align-items: center;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1359,7 +1354,7 @@ header {
     z-index: 1;
     -webkit-user-select: none;
     -moz-user-select: none;
-    user-select: none;
+         user-select: none;
   }
   #menuToggle a {
     text-decoration: none;
@@ -1459,9 +1454,8 @@ header {
 
 .wrap-head .container.center .header-btn-desk {
   position: absolute;
-  top: 50%;
+  top: 5px;
   right: 0;
-  transform: translateY(-50%);
 }
 
 .header-btn-desk {
