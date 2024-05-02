@@ -1233,6 +1233,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  min-height: 80px;
 }
 
 .wrap-head .container.left {
@@ -1454,7 +1455,7 @@ header {
 
 .wrap-head .container.center .header-btn-desk {
   position: absolute;
-  top: 5px;
+  top: 15px;
   right: 0;
 }
 
