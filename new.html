@@ -52,7 +52,7 @@
       <!-- AÑADIR EL BOTÓN AL HEADER SIEMPRE A LA DERECHA, IMPORTANTE DE COMO SE VERIA EN MOVIL NO SE SI PONER EL ICONO "HAMBURGUESA"
   TAMBIEN UNA CLASE AUXILIAR PARA QUE EL MENÚ SEA STICKY O NO 
   -->
-    <div class="wrap-head">
+    <div class="wrap-head sticky">
       <div  class="container center">
         <div class="logo-funnel"> <img alt="Logo" loading="lazy" src="https://kit.glmedialibrary.com/6/logo.png"
             style="height:60px!important">
@@ -438,6 +438,22 @@
   
       window.addEventListener('resize', handleResize);
     });
+  </script>
+
+  <script> 
+
+    var header = document.querySelector('header');
+    var nextSection = header.nextElementSibling;
+    var wrapHead = document.querySelector('.wrap-head');
+
+    function addMarginTop() {
+        var wrapHeadHeight = wrapHead.offsetHeight; 
+        nextSection.style.marginTop = 80 + 'px'; 
+    }
+
+    if (wrapHead.classList.contains('sticky')) {
+        addMarginTop();
+    }
   </script>
 
   <link href="https://kit.glmedialibrary.com/styles/css.css" rel="stylesheet" defer id="estiloscss">

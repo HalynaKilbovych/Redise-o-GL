@@ -1,5 +1,6 @@
 header {
   position: relative;
+  height: 100%;
 }
 
 .wrap-head.sticky {
@@ -7,6 +8,7 @@ header {
   top: 0;
   width: 100%;
   min-height: 80px;
+  padding: 10px!important;
 }
 
 .wrap-head .container.left {
@@ -49,7 +51,9 @@ header {
 
 .wrap-head .container.center .header-btn-desk {
   position: absolute;
+  top: 50%;
   right: 0;
+  transform: translateY( -50%);
 }
 
 @media only screen and (max-width: 768px) {
@@ -228,8 +232,9 @@ header {
 
 .wrap-head .container.center .header-btn-desk {
   position: absolute;
-  top: 10px;
+  top: 50%!important;
   right: 0;
+  transform: translateY( -50%)!important;
 }
 
 .header-btn-desk {
