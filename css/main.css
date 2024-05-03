@@ -1458,9 +1458,9 @@ header {
 }
 
 .wrap-head .container.center .header-btn-desk {
-  position: absolute;
-  top: 50%;
-  right: 0;
+  position: absolute!important;
+  top: 50%!important;
+  right: 0!important;
   transform: translateY(-50%);
 }
 
