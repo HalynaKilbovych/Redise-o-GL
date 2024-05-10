@@ -1499,6 +1499,11 @@ header {
   min-width: 30%;
 }
 
+@media only screen and (max-width: 768px) {
+  .ticker div {
+    min-width: 50%;
+  }
+}
 .ticker-move .ticker div:nth-child(odd) {
   animation: ticker 10s linear infinite;
   animation-delay: -10s;
