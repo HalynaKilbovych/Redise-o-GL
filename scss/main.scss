@@ -1504,12 +1504,12 @@ header {
   white-space: nowrap;
   text-transform: uppercase;
   padding: 10px;
-  min-width: 30%;
+  min-width: 50%;
 }
 
 @media only screen and (min-width: 768px) {
   .ticker div  {
-    min-width: 50%;
+    min-width: 30%;
   }
 }
 
