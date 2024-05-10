@@ -113,45 +113,46 @@
     </div>
   </header>
 
-  <div class="ticker-wrap ticker-move ticker-rotate" style="background: linear-gradient(270deg, #925DDC 0%, #DE4460 100%); color: #ffffff; font-size: 14px; font-weight: 700; --marginLeft: 50px; --box-shadowColor: 186, 186, 186;">
-    <div id="ticker" class="ticker" style="--d:25; --y:200; ">
-      <div>
-        <span>
-          🔥️ One Click Installation 🔥
-        </span>
-        <span>
-          🔥️ One Click Installation🔥
-        </span>
-        <span>
-          🔥️ One Click Installation🔥
-        </span>
-        <span>
-          🔥️ One Click Installation🔥
-        </span>
-        <span>
-          🔥️ One Click Installation🔥
-        </span>
-        <span>
-          🔥️ One Click Installation🔥
-        </span>
-        <span>
-          🔥️ One Click Installation🔥
-        </span>
-        <span>
-          🔥️ One Click Installation🔥
-        </span>
-        <span>
-          🔥️ One Click Installation🔥
-        </span>
-        <span>
-          🔥️ One Click Installation🔥
-        </span>
-        <span>
-          🔥️ One Click Installation🔥
-        </span>
+    <div class="ticker-wrap ticker-move ticker-rotate ticker-rotated-element" style="background: linear-gradient(270deg, #925DDC 0%, #DE4460 100%); color: #ffffff; font-size: 14px; font-weight: 700; --marginLeft: 50px; --box-shadowColor: 186, 186, 186;">
+      <div id="ticker" class="ticker" style="--d:25; --y:200; ">
+        <div>
+          <span>
+            🔥️ One Click Installation 🔥
+          </span>
+          <span>
+            ❇️
+          </span>
+          <span>
+            🔥️ One Click Installation🔥
+          </span>
+          <span>
+            ❇️
+          </span>
+          <span>
+            🔥️ One Click Installation🔥
+          </span>
+          <span>
+            ❇️
+          </span>
+          <span>
+            🔥️ One Click Installation🔥
+          </span>
+          <span>
+            ❇️
+          </span>
+          <span>
+            🔥️ One Click Installation🔥
+          </span>
+          <span>
+            ❇️
+          </span>
+          <span>
+            🔥️ One Click Installation🔥
+          </span>
+        </div>
       </div>
     </div>
-  </div>
+
 
 
   <!-- SECCIÓN CARACTERISTICAS tiene 3 clases funnel-one funnel-two funnel-three  HAY QUE CREAR funnel-four y funnel-five-->
@@ -443,6 +444,16 @@
     </div>
   </section>
 
+  <script> 
+
+var tickerWrap = document.querySelector('.ticker-wrap');
+
+var clonedTickerWrap = tickerWrap.cloneNode(true);
+
+clonedTickerWrap.classList.add('cloned-ticker-wrap');
+
+tickerWrap.parentNode.insertBefore(clonedTickerWrap, tickerWrap.nextSibling);
+  </script>
 
   <script>
     window.addEventListener('DOMContentLoaded', (event) => {
