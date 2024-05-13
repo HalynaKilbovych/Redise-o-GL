@@ -1506,7 +1506,7 @@ header {
 
 .ticker-move .ticker div:nth-child(odd) {
   animation: ticker 40s linear infinite;
-  animation-delay: -10s;
+  animation-delay: 0s;
 }
 
 @keyframes ticker {
@@ -1517,6 +1517,11 @@ header {
     transform: translateX(-100%);
   }
 }
+.ticker-move .ticker div:nth-child(even) {
+  animation: ticker 40s linear infinite;
+  animation-delay: -40s;
+}
+
 .ticker-wrap.ticker-rotate {
   transform: rotate(3deg) translateY(0);
   position: relative;
@@ -1552,4 +1557,8 @@ header {
   width: calc(100% + 400px);
   background: inherit;
   left: -500px;
+}
+
+.ticker-rotate .ticker div {
+  min-width: 105%;
 }
