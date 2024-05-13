@@ -1562,3 +1562,19 @@ header {
 .ticker-rotate .ticker div {
   min-width: 105%;
 }
+
+.ticker-wrap.ticker-rotate {
+  width: 100.5%;
+}
+
+.ticker-wrap.ticker-rotate {
+  left: -0.25%;
+}
+
+.ticker-wrap.ticker-move.ticker-rotate {
+  margin-top: 20px;
+}
+
+.ticker-wrap.ticker-move.ticker-rotate.cloned-ticker-wrap {
+  margin-top: 0px;
+}

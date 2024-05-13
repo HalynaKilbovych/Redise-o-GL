@@ -267,6 +267,82 @@
     </div>
   </section>
 
+  <div class="ticker-wrap ticker-move ticker-rotate ticker-rotated-element" style="background: linear-gradient(270deg, #925DDC 0%, #DE4460 100%); color: #ffffff; font-size: 14px; font-weight: 700; --marginLeft: 50px; --box-shadowColor: 186, 186, 186;">
+    <div id="ticker" class="ticker">
+      <div>
+        <span>
+          🔥️ One Click Installation 🔥
+        </span>
+        <span>
+          ❇️
+        </span>
+        <span>
+          🔥️ One Click Installation🔥
+        </span>
+        <span>
+          ❇️
+        </span>
+        <span>
+          🔥️ One Click Installation🔥
+        </span>
+        <span>
+          ❇️
+        </span>
+        <span>
+          🔥️ One Click Installation🔥
+        </span>
+        <span>
+          ❇️
+        </span>
+        <span>
+          🔥️ One Click Installation🔥
+        </span>
+        <span>
+          ❇️
+        </span>
+        <span>
+          🔥️ One Click Installation🔥
+        </span>
+      </div>
+
+      <div>
+        <span>
+          🔥️ One Click Installation 🔥
+        </span>
+        <span>
+          ❇️
+        </span>
+        <span>
+          🔥️ One Click Installation🔥
+        </span>
+        <span>
+          ❇️
+        </span>
+        <span>
+          🔥️ One Click Installation🔥
+        </span>
+        <span>
+          ❇️
+        </span>
+        <span>
+          🔥️ One Click Installation🔥
+        </span>
+        <span>
+          ❇️
+        </span>
+        <span>
+          🔥️ One Click Installation🔥
+        </span>
+        <span>
+          ❇️
+        </span>
+        <span>
+          🔥️ One Click Installation🔥
+        </span>
+      </div>
+    </div>
+  </div>
+
    <!-- SECCIÓN CARACTERISTICAS tiene 3 clases funnel-one funnel-two funnel-three  HAY QUE CREAR funnel-four y funnel-five-->
   <section class="funnel-features funnel-two  A " id="features35561"
     style="background:0 0;background-image:linear-gradient(rgba(255,255,255,.99),rgba(255,255,255,.99)),linear-gradient(45deg, transparent 0%, transparent 99%, transparent 100%);order:3;">
@@ -479,16 +555,17 @@
     </div>
   </section>
 
-  <script> 
+  <script>
+    var tickerWraps = document.querySelectorAll('.ticker-wrap');
+ 
+    tickerWraps.forEach(function(tickerWrap) {
 
-  var tickerWrap = document.querySelector('.ticker-wrap');
-
-  var clonedTickerWrap = tickerWrap.cloneNode(true);
-
-  clonedTickerWrap.classList.add('cloned-ticker-wrap');
-
-  tickerWrap.parentNode.insertBefore(clonedTickerWrap, tickerWrap.nextSibling);
-
+      var clonedTickerWrap = tickerWrap.cloneNode(true);
+      
+      clonedTickerWrap.classList.add('cloned-ticker-wrap');
+      
+      tickerWrap.parentNode.insertBefore(clonedTickerWrap, tickerWrap.nextSibling);
+    });
   </script>
 
 
