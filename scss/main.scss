@@ -1387,6 +1387,7 @@ header {
     margin-bottom: 5px;
     position: relative;
     background: #cdcdcd;
+    background-color:  #cdcdcd;
     border-radius: 3px;
     z-index: 1;
     transform-origin: 4px 0px;
@@ -1528,6 +1529,8 @@ header {
 }
 
 
+
+
 // ticker-rotate
 
 .ticker-wrap.ticker-rotate { 
@@ -1543,6 +1546,10 @@ header {
   z-index: 100;
   opacity: 0.8;
   transform: rotate(-3deg) translateY(-100%); 
+}
+
+.ticker-wrap.ticker-rotate .ticker div {
+  padding: 27px 0;
 }
 
 
