@@ -1477,7 +1477,6 @@ header {
 
 
 
-
 // ticker 
 
 .ticker-wrap { 
@@ -1494,8 +1493,8 @@ header {
 .ticker  { 
   position: relative;
   width: calc(100% + 400px);
-  background: inherit;
   left: -400px;
+  background: inherit;
   display: flex;
 
 }
@@ -1505,7 +1504,6 @@ header {
   white-space: nowrap;
   text-transform: uppercase;
   padding: 10px 0px;
-  min-width: 105%;
 }
 
 .ticker span { 
@@ -1513,28 +1511,39 @@ header {
 }
 
 .ticker-move .ticker div:nth-child(odd) {
-  animation: ticker 40s linear infinite;
-  animation-delay: 0s;
+  animation: ticker 30s linear infinite;
+  animation-delay: -30s;
 }
 
+.ticker-move .ticker div:nth-child(even) {
+  animation: ticker2 30s linear infinite;
+  animation-delay: -15s;
+}
 
-@keyframes ticker { 
-  0% { 
+@keyframes ticker {
+  0% {
     transform: translateX(100%);
   }
-
-  100% { 
+  100% {
     transform: translateX(-100%);
   }
 }
 
-
-.ticker-move .ticker div:nth-child(even) {
-  animation: ticker 40s linear infinite;
-  animation-delay: -40s;
+@keyframes ticker2 { 
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
 }
 
+.ticker-rotated-element span:nth-child(even){ 
+  display: inline-block;
+  animation: rotated-element 5s linear infinite;
 
+  
+}
 
 
 // ticker-rotate
@@ -1559,10 +1568,6 @@ header {
 }
 
 
-.ticker-rotated-element span:nth-child(even){ 
-  display: inline-block;
-  animation: rotated-element 5s linear infinite;
-}
 
 @keyframes rotated-element { 
   0% { transform: rotate(0deg); }
@@ -1573,12 +1578,7 @@ header {
 .ticker-wrap.ticker-rotate.cloned-ticker-wrap .ticker { 
   width: calc(100% + 400px);
   background: inherit;
-  left: -500px;
-}
-
-
-.ticker-rotate  .ticker div { 
-  min-width: 105%;
+  left: -400px;
 }
 
 
