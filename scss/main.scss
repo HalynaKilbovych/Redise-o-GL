@@ -1511,13 +1511,13 @@ header {
 }
 
 .ticker-move .ticker div:nth-child(odd) {
-  animation: ticker 30s linear infinite;
-  animation-delay: -30s;
+  animation: ticker 60s linear infinite;
+  animation-delay: -60s;
 }
 
 .ticker-move .ticker div:nth-child(even) {
-  animation: ticker2 30s linear infinite;
-  animation-delay: -15s;
+  animation: ticker2 60s linear infinite;
+  animation-delay: -30s;
 }
 
 @keyframes ticker {
