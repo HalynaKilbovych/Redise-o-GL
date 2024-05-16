@@ -694,41 +694,41 @@
   document.addEventListener('DOMContentLoaded', () => {
       const section = document.querySelector('.funnel-features.funnel-six');
       if (section) {
-        const container = section.querySelector('.container .wrap-flex');
-        const flexFeatures = section.querySelector('.flex-features');
-
-        const wrapperItem = document.createElement('div');
-        wrapperItem.className = 'flex-features-wrapper-item';
-
-        wrapperItem.appendChild(flexFeatures);
-
-        const wrapperItemImg = document.createElement('div');
-        wrapperItemImg.className = 'flex-features-wrapper-item-img';
-        const img = document.createElement('img');
-        img.src = "https://library.funnelmister.com/FH/11/bae30c6edba8ce6fd0538813a13a6cbb.png"; // Початкове зображення
-        wrapperItemImg.appendChild(img);
-
-        wrapperItem.appendChild(wrapperItemImg);
-
-        container.appendChild(wrapperItem);
-
-        document.querySelectorAll('.funnel-features.funnel-six .info-feature').forEach(item => {
-          item.addEventListener('click', () => {
-            document.querySelectorAll('.funnel-features.funnel-six .info-feature').forEach(i => i.classList.remove('active'));
-            item.classList.add('active');
-
-            const imageSrc = item.parentElement.querySelector('.image-feature img').src;
-
-            img.style.opacity = 0;
-            setTimeout(() => {
-              img.src = imageSrc; 
-              img.style.opacity = 1; 
-            }, 250); 
+          const container = section.querySelector('.container .wrap-flex');
+          const flexFeatures = section.querySelector('.flex-features');
+  
+          const wrapperItem = document.createElement('div');
+          wrapperItem.className = 'flex-features-wrapper-item';
+  
+          wrapperItem.appendChild(flexFeatures);
+  
+          const wrapperItemImg = document.createElement('div');
+          wrapperItemImg.className = 'flex-features-wrapper-item-img';
+          const img = document.createElement('img');
+          img.src = "https://library.funnelmister.com/FH/11/bae30c6edba8ce6fd0538813a13a6cbb.png"; // Початкове зображення
+          wrapperItemImg.appendChild(img);
+  
+          wrapperItem.appendChild(wrapperItemImg);
+  
+          container.appendChild(wrapperItem);
+  
+          document.querySelectorAll('.funnel-features.funnel-six .info-feature').forEach(item => {
+              item.addEventListener('click', () => {
+                  document.querySelectorAll('.funnel-features.funnel-six .info-feature').forEach(i => i.classList.remove('active'));
+                  item.classList.add('active');
+  
+                  const imageSrc = item.parentElement.querySelector('.image-feature img').src;
+  
+                  img.style.opacity = 0;
+                  setTimeout(() => {
+                      img.src = imageSrc; 
+                      img.style.opacity = 1; 
+                  }, 250); 
+              });
           });
-        });
       }
   });
-</script>
+  </script>
 
 
   <script>

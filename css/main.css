@@ -1648,6 +1648,17 @@ header {
 }
 
 .funnel-features.funnel-six .item-feature .info-feature {
+  max-height: 150px;
+  overflow: hidden;
+  transition: max-height 2s ease, opacity 2s ease;
+}
+
+.funnel-features.funnel-six .item-feature .info-feature.active {
+  max-height: 500px;
+  opacity: 1;
+}
+
+.funnel-features.funnel-six .item-feature .info-feature {
   cursor: pointer;
   border: 1px solid rgb(var(--btnCTA));
   width: 100%;
