@@ -113,7 +113,7 @@
     </div>
   </header>
 
-    <div class="ticker-wrap ticker-move" style="background: linear-gradient(270deg, #925DDC 0%, #DE4460 100%); color: #ffffff; font-size: 14px; font-weight: 700; --marginLeft: 50px; --box-shadowColor: 186, 186, 186;">
+    <!-- <div class="ticker-wrap ticker-move" style="background: linear-gradient(270deg, #925DDC 0%, #DE4460 100%); color: #ffffff; font-size: 14px; font-weight: 700; --marginLeft: 50px; --box-shadowColor: 186, 186, 186;">
       <div id="ticker" class="ticker">
         <div>
           <span>
@@ -247,11 +247,11 @@
           </span>
         </div>
       </div>
-    </div>
+    </div> -->
 
 
   <!-- SECCIÓN CARACTERISTICAS tiene 3 clases funnel-one funnel-two funnel-three  HAY QUE CREAR funnel-four y funnel-five-->
-  <section class="funnel-features funnel-one   A " id="features35560"
+  <section class="funnel-features funnel-six   A " id="features35560"
     style="background:0 0;background-image:linear-gradient(rgba(255,255,255,.0),rgba(255,255,255,.0)),linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);order:1;">
     <div class="container">
       <div class="wrap-flex">
@@ -327,7 +327,7 @@
     </div>
   </section>
 
-  <div class="ticker-wrap ticker-move ticker-rotate ticker-rotated-element" style="order: 2; background: linear-gradient(270deg, #925DDC 0%, #DE4460 100%); color: #ffffff; font-size: 14px; font-weight: 700; --marginLeft: 50px; --box-shadowColor: 186, 186, 186;">
+  <!-- <div class="ticker-wrap ticker-move ticker-rotate ticker-rotated-element" style="order: 2; background: linear-gradient(270deg, #925DDC 0%, #DE4460 100%); color: #ffffff; font-size: 14px; font-weight: 700; --marginLeft: 50px; --box-shadowColor: 186, 186, 186;">
     <div id="ticker" class="ticker">
       <div>
         <span>
@@ -461,7 +461,7 @@
         </span>
       </div>
     </div>
-  </div>
+  </div> -->
 
 
    <!-- SECCIÓN CARACTERISTICAS tiene 3 clases funnel-one funnel-two funnel-three  HAY QUE CREAR funnel-four y funnel-five-->
@@ -670,7 +670,7 @@
     <div class="container">
       <div class="info-layer">
         <div class="funnel-text-info" style="color: rgb(255, 255, 255); font-size: 18px;">
-       🔥️ONE CLICK INSTALLATION 🔥️ USER-FRIENDLY SUPPORT 🔥️ UNIQUE &amp; TRENDY FEATURES 🔥️ EASY TO CUSTOMIZE
+       🔥️ONE CLICK INSTALLATION 🔥️ USER-FRIENDLY SUPPORT 🔥️ UNIQUE  TRENDY FEATURES 🔥️ EASY TO CUSTOMIZE
               🔥 ONE CLICK INSTALLATION 
         </div>
       </div>
@@ -689,6 +689,46 @@
       tickerWrap.parentNode.insertBefore(clonedTickerWrap, tickerWrap.nextSibling);
     });
   </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+      const section = document.querySelector('.funnel-features.funnel-six');
+      if (section) {
+        const container = section.querySelector('.container .wrap-flex');
+        const flexFeatures = section.querySelector('.flex-features');
+
+        const wrapperItem = document.createElement('div');
+        wrapperItem.className = 'flex-features-wrapper-item';
+
+        wrapperItem.appendChild(flexFeatures);
+
+        const wrapperItemImg = document.createElement('div');
+        wrapperItemImg.className = 'flex-features-wrapper-item-img';
+        const img = document.createElement('img');
+        img.src = "https://library.funnelmister.com/FH/11/bae30c6edba8ce6fd0538813a13a6cbb.png"; // Початкове зображення
+        wrapperItemImg.appendChild(img);
+
+        wrapperItem.appendChild(wrapperItemImg);
+
+        container.appendChild(wrapperItem);
+
+        document.querySelectorAll('.funnel-features.funnel-six .info-feature').forEach(item => {
+          item.addEventListener('click', () => {
+            document.querySelectorAll('.funnel-features.funnel-six .info-feature').forEach(i => i.classList.remove('active'));
+            item.classList.add('active');
+
+            const imageSrc = item.parentElement.querySelector('.image-feature img').src;
+
+            img.style.opacity = 0;
+            setTimeout(() => {
+              img.src = imageSrc; 
+              img.style.opacity = 1; 
+            }, 250); 
+          });
+        });
+      }
+  });
+</script>
 
 
   <script>

@@ -1589,3 +1589,115 @@ header {
 .ticker-wrap.ticker-move.ticker-rotate.cloned-ticker-wrap { 
   margin-top: 0px;
 }
+
+
+.funnel-text-info { 
+  display: flex;
+  animation: ticker 10s linear infinite;
+  animation-delay: -10s;
+}
+
+
+// Features Component - Version 1
+
+.funnel-features .funnel-six { 
+
+}
+
+.funnel-features.funnel-six .head-layer .funnel-title, 
+.funnel-features.funnel-six .head-layer .funnel-sec-title{ 
+  text-align: center;
+}
+
+.funnel-features.funnel-six .head-layer { 
+  margin-bottom: 50px;
+}
+
+.funnel-features.funnel-six .wrap-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.funnel-features.funnel-six .head-layer .image-layer{
+  display: none; 
+}
+
+
+.funnel-features.funnel-six .flex-features {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.funnel-features.funnel-six .item-feature .image-feature {
+  display: none;
+}
+
+.funnel-features.funnel-six .item-feature  {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  align-items: start;
+}
+
+.flex-features-wrapper-item { 
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+.flex-features-wrapper-item-img { 
+  width: 50%;
+}
+
+.flex-features-wrapper-item-img img { 
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+}
+
+
+.funnel-features.funnel-six .item-feature .funnel-text,
+.funnel-features.funnel-six .item-feature .container-btn {
+    opacity: 0;
+    transition: opacity 2s ease;
+    height: 0; 
+    overflow: hidden;
+}
+
+.funnel-features.funnel-six .item-feature .info-feature.active .funnel-text,
+.funnel-features.funnel-six .item-feature .info-feature.active .container-btn {
+    opacity: 1;
+    height: auto; 
+}
+.funnel-features.funnel-six .item-feature .info-feature {
+    cursor: pointer;
+    border: 1px solid rgb(var(--btnCTA)) ;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.funnel-features .flex-features .item-feature .info-feature .funnel-sec-title { 
+  margin-bottom: 0px!important;
+}
+
+.funnel-features.funnel-six .item-feature .info-feature.active .funnel-sec-title { 
+  margin-bottom: 30px!important;
+}
+
+.flex-features-wrapper-item-img img {
+  transition: opacity 500ms ease;
+}
+
+@media only screen and (min-width: 768px) {
+  .flex-features-wrapper-item { 
+    flex-direction: row;
+  }
+
+  .funnel-features.funnel-six .flex-features {
+    width: 50%;
+  }
+}
