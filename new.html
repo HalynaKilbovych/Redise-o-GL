@@ -714,16 +714,31 @@
   
           document.querySelectorAll('.funnel-features.funnel-six .info-feature').forEach(item => {
               item.addEventListener('click', () => {
-                  document.querySelectorAll('.funnel-features.funnel-six .info-feature').forEach(i => i.classList.remove('active'));
-                  item.classList.add('active');
+                  const activeItem = document.querySelector('.funnel-features.funnel-six .info-feature.active');
+                  
+                  if (activeItem && activeItem !== item) {
+                      activeItem.style.maxHeight = `${activeItem.scrollHeight}px`;
+                      setTimeout(() => {
+                          activeItem.classList.remove('active');
+                          activeItem.style.maxHeight = '120px';
+                      }, 5); 
+                  }
+  
+                  if (!item.classList.contains('active')) {
+                      item.style.maxHeight = `${item.scrollHeight}px`;
+                      setTimeout(() => {
+                          item.classList.add('active');
+                          item.style.maxHeight = '500px'; 
+                      }, 5); 
+                  }
   
                   const imageSrc = item.parentElement.querySelector('.image-feature img').src;
   
                   img.style.opacity = 0;
                   setTimeout(() => {
-                      img.src = imageSrc; 
-                      img.style.opacity = 1; 
-                  }, 250); 
+                      img.src = imageSrc;
+                      img.style.opacity = 1;
+                  }, 250);
               });
           });
       }

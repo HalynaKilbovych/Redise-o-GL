@@ -1600,10 +1600,6 @@ header {
 
 // Features Component - Version 1
 
-.funnel-features .funnel-six { 
-
-}
-
 .funnel-features.funnel-six .head-layer .funnel-title, 
 .funnel-features.funnel-six .head-layer .funnel-sec-title{ 
   text-align: center;
@@ -1630,9 +1626,6 @@ header {
   width: 100%;
 }
 
-.funnel-features.funnel-six .item-feature .image-feature {
-  display: none;
-}
 
 .funnel-features.funnel-six .item-feature  {
   display: flex;
@@ -1659,39 +1652,6 @@ header {
 }
 
 
-.funnel-features.funnel-six .item-feature .funnel-text,
-.funnel-features.funnel-six .item-feature .container-btn {
-    opacity: 0;
-    transition: opacity 2s ease;
-    height: 0; 
-    overflow: hidden;
-}
-
-.funnel-features.funnel-six .item-feature .info-feature.active .funnel-text,
-.funnel-features.funnel-six .item-feature .info-feature.active .container-btn {
-    opacity: 1;
-    height: auto; 
-}
-
-.funnel-features.funnel-six .item-feature .info-feature {
-  max-height: 150px;
-  overflow: hidden;
-  transition: max-height 2s ease, opacity 2s ease;
-}
-
-.funnel-features.funnel-six .item-feature .info-feature.active {
-  max-height: 500px;
-  opacity: 1;
-}
-
-
-.funnel-features.funnel-six .item-feature .info-feature {
-    cursor: pointer;
-    border: 1px solid rgb(var(--btnCTA)) ;
-    width: 100%;
-    margin-bottom: 20px;
-    border-radius: 20px;
-}
 
 .funnel-features .flex-features .item-feature .info-feature .funnel-sec-title { 
   margin-bottom: 0px!important;
@@ -1713,4 +1673,71 @@ header {
   .funnel-features.funnel-six .flex-features {
     width: 50%;
   }
+
+  .funnel-features.funnel-six .item-feature .image-feature {
+    display: none;
+  }
+  
+  .funnel-features.funnel-six .item-feature .funnel-text,
+.funnel-features.funnel-six .item-feature .container-btn {
+    opacity: 0;
+    transition: opacity 2s ease;
+    height: 0; 
+    overflow: hidden;
+}
+
+.funnel-features.funnel-six .item-feature .info-feature.active .funnel-text,
+.funnel-features.funnel-six .item-feature .info-feature.active .container-btn {
+    opacity: 1;
+    height: auto; 
+}
+
+.funnel-features.funnel-six .item-feature .info-feature {
+  cursor: pointer;
+  border: 1px solid rgb(var(--btnCTA)) ;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .flex-features-wrapper-item-img
+   { 
+    display: none;
+  }
+
+  .funnel-features.funnel-six .flex-features .item-feature  { 
+    display: flex;
+    flex-direction: column-reverse;
+    border: 1px solid rgb(var(--btnCTA)) ;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  .funnel-features.funnel-six .item-feature .image-feature {
+    margin: 0 auto;
+  }
+
+  .funnel-features.funnel-six .item-feature .image-feature img{
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+  }
+
+}
+
+.funnel-features.funnel-six .item-feature .info-feature {
+  max-height: 150px; 
+  overflow: hidden;
+  transition: max-height 2s ease, opacity 2s ease;
+}
+
+.funnel-features.funnel-six .item-feature .info-feature.active {
+  max-height: 500px;
+  opacity: 1;
 }
