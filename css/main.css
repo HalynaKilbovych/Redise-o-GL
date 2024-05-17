@@ -1654,7 +1654,7 @@ header {
   .funnel-features.funnel-six .item-feature .funnel-text,
   .funnel-features.funnel-six .item-feature .container-btn {
     opacity: 0;
-    transition: opacity 2s ease;
+    transition: opacity 1s ease;
     height: 0;
     overflow: hidden;
   }
@@ -1694,7 +1694,6 @@ header {
   }
 }
 .funnel-features.funnel-six .item-feature .info-feature {
-  max-height: 150px;
   overflow: hidden;
   transition: max-height 2s ease, opacity 2s ease;
 }
