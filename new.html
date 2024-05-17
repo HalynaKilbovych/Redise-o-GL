@@ -691,62 +691,62 @@
   </script>
 
   <script>
-document.addEventListener('DOMContentLoaded', () => {
-    if (window.innerWidth >= 768) {
-        const section = document.querySelector('.funnel-features.funnel-six');
-        if (section) {
-            const container = section.querySelector('.container .wrap-flex');
-            const flexFeatures = section.querySelector('.flex-features');
+    document.addEventListener('DOMContentLoaded', () => {
+        if (window.innerWidth >= 768) {
+            const section = document.querySelector('.funnel-features.funnel-six');
+            if (section) {
+                const container = section.querySelector('.container .wrap-flex');
+                const flexFeatures = section.querySelector('.flex-features');
 
-            const wrapperItem = document.createElement('div');
-            wrapperItem.className = 'flex-features-wrapper-item';
+                const wrapperItem = document.createElement('div');
+                wrapperItem.className = 'flex-features-wrapper-item';
 
-            wrapperItem.appendChild(flexFeatures);
+                wrapperItem.appendChild(flexFeatures);
 
-            const wrapperItemImg = document.createElement('div');
-            wrapperItemImg.className = 'flex-features-wrapper-item-img';
-            const img = document.createElement('img');
-            img.src = "https://library.funnelmister.com/FH/11/bae30c6edba8ce6fd0538813a13a6cbb.png"; // Початкове зображення
-            wrapperItemImg.appendChild(img);
+                const wrapperItemImg = document.createElement('div');
+                wrapperItemImg.className = 'flex-features-wrapper-item-img';
+                const img = document.createElement('img');
+                img.src = "https://library.funnelmister.com/FH/11/bae30c6edba8ce6fd0538813a13a6cbb.png"; // Початкове зображення
+                wrapperItemImg.appendChild(img);
 
-            wrapperItem.appendChild(wrapperItemImg);
+                wrapperItem.appendChild(wrapperItemImg);
 
-            container.appendChild(wrapperItem);
+                container.appendChild(wrapperItem);
 
-            document.querySelectorAll('.funnel-features.funnel-six .info-feature').forEach(item => {
-                item.addEventListener('click', () => {
-                    const activeItem = document.querySelector('.funnel-features.funnel-six .info-feature.active');
-                    
-                    if (activeItem && activeItem !== item) {
-                        activeItem.style.maxHeight = `${activeItem.scrollHeight}px`;
-                        setTimeout(() => {
-                            activeItem.style.maxHeight = '120px';
+                document.querySelectorAll('.funnel-features.funnel-six .info-feature').forEach(item => {
+                    item.addEventListener('click', () => {
+                        const activeItem = document.querySelector('.funnel-features.funnel-six .info-feature.active');
+                        
+                        if (activeItem && activeItem !== item) {
+                            activeItem.style.maxHeight = `${activeItem.scrollHeight}px`;
                             setTimeout(() => {
-                                activeItem.classList.remove('active');
-                            }, 2000); 
-                        }, 0); 
-                    }
+                                activeItem.style.maxHeight = '120px';
+                                setTimeout(() => {
+                                    activeItem.classList.remove('active');
+                                }, 2000); 
+                            }, 0); 
+                        }
 
-                    if (!item.classList.contains('active')) {
-                        item.style.maxHeight = `${item.scrollHeight}px`;
+                        if (!item.classList.contains('active')) {
+                            item.style.maxHeight = `${item.scrollHeight}px`;
+                            setTimeout(() => {
+                                item.classList.add('active');
+                                item.style.maxHeight = '500px'; 
+                            }, 0); 
+                        }
+
+                        const imageSrc = item.parentElement.querySelector('.image-feature img').src;
+
+                        img.style.opacity = 0;
                         setTimeout(() => {
-                            item.classList.add('active');
-                            item.style.maxHeight = '500px'; 
-                        }, 0); 
-                    }
-
-                    const imageSrc = item.parentElement.querySelector('.image-feature img').src;
-
-                    img.style.opacity = 0;
-                    setTimeout(() => {
-                        img.src = imageSrc;
-                        img.style.opacity = 1;
-                    }, 0);
+                            img.src = imageSrc;
+                            img.style.opacity = 1;
+                        }, 0);
+                    });
                 });
-            });
+            }
         }
-    }
-});
+    });
   </script>
 
 

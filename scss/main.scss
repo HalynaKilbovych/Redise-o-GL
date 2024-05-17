@@ -1712,6 +1712,11 @@ header {
     display: none;
   }
 
+  .funnel-features.funnel-six .item-feature .info-feature.active {
+    max-height: 500px;
+    opacity: 1;
+  }
+
   .funnel-features.funnel-six .flex-features .item-feature  { 
     display: flex;
     flex-direction: column-reverse;
@@ -1738,7 +1743,5 @@ header {
   transition: max-height 2s ease, opacity 2s ease;
 }
 
-.funnel-features.funnel-six .item-feature .info-feature.active {
-  max-height: 500px;
-  opacity: 1;
-}
+
+
